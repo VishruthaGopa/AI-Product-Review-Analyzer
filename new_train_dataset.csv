@@ -1,18 +1,16 @@
+text,aspect,sentiment
 "The glossy plastic used on the base feels tacky and cheapens the entire product.","design","negative"
 "The glossy plastic used on the base feels tacky and cheapens the entire product.","audio","neutral"
 "The glossy plastic used on the base feels tacky and cheapens the entire product.","storage","neutral"
 "The glossy plastic used on the base feels tacky and cheapens the entire product.","battery","neutral"
-
 "Bass response on this soundbar is deep and powerful.","audio","positive"
 "Bass response on this soundbar is deep and powerful.","comfort","positive"
 "Bass response on this soundbar is deep and powerful.","durability","positive"
 "Bass response on this soundbar is deep and powerful.","design","positive"
-
 "Fumbling with these tiny, flush-mounted buttons in the dark is incredibly annoying.","comfort","negative"
 "Fumbling with these tiny, flush-mounted buttons in the dark is incredibly annoying.","speed","negative"
 "Fumbling with these tiny, flush-mounted buttons in the dark is incredibly annoying.","design","negative"
 "Fumbling with these tiny, flush-mounted buttons in the dark is incredibly annoying.","features","negative"
-
 "Sound profile is perfectly balanced for movies.","audio","positive"
 "Sound profile is perfectly balanced for movies.","quality","positive"
 "Sound profile is perfectly balanced for movies.","price","positive"
