@@ -40,13 +40,12 @@ class ProductReviewAnalyzer:
         results = []
         text_lower = review_text.lower()
         for aspect in ASPECTS:
-            if aspect.lower() in text_lower:
-                sentiment = self.predict_sentiment(review_text, aspect)
-                results.append({
-                    "review": review_text,
-                    "aspect": aspect,
-                    "sentiment": sentiment
-                })
+            sentiment = self.predict_sentiment(review_text, aspect)
+            results.append({
+                "review": review_text,
+                "aspect": aspect,
+                "sentiment": sentiment
+            })
         return results
 
     def analyze_reviews(self, reviews):
