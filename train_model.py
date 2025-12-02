@@ -313,7 +313,7 @@ class ABSAKFoldTrainer:
             'fold_num': best_fold_num,
             'accuracy': results_df.loc[best_fold_idx, 'accuracy'],
             'f1': results_df.loc[best_fold_idx, 'f1']
-        }, best_model_path, weights_only=False)
+        }, best_model_path)
 
         print(f"\nBest model saved as single file: {best_model_path}")
 
