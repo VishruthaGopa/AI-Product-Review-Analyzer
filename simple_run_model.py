@@ -48,15 +48,15 @@ def test_absa_model():
     # Test sentences and aspects
     test_cases = [
         {
-            "sentence": "The perfume smelled awful, but I liked the way it looked.",
+            "sentence": "The battery drains quicker than I hoped if I leave all features on.",
             "aspect": "battery"
         },
         {
-            "sentence": "The food was excellent but the service was terrible.",
-            "aspect": "food"
+            "sentence": "The battery drains quicker than I hoped if I leave all features on.",
+            "aspect": "price"
         },
         {
-            "sentence": "The camera quality is amazing but the battery life is poor.",
+            "sentence": "The battery drains quicker than I hoped if I leave all features on.",
             "aspect": "camera"
         }
     ]
@@ -73,4 +73,5 @@ def test_absa_model():
 
 
 if __name__ == "__main__":
+    print("Starting simple run of untrained model...")
     test_absa_model()
