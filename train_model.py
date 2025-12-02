@@ -287,21 +287,35 @@ class ABSAKFoldTrainer:
         print(f"   Accuracy: {results_df.loc[best_fold_idx, 'accuracy']:.4f}")
         print(f"   F1-Score: {results_df.loc[best_fold_idx, 'f1']:.4f}")
 
-        # Save the best model as a single .pth file
+        # # Save the best model as a single .pth file
+        # best_model_path = os.path.join(output_dir, "best_model.pth")
+        # torch.save({
+        #     'model_state_dict': best_model.state_dict(),
+        #     'config': best_model.config,
+        #     'label2id': self.label2id,
+        #     'id2label': self.id2label,
+        #     'tokenizer': self.tokenizer,  # Save tokenizer configuration
+        #     'fold_num': best_fold_num,
+        #     'accuracy': results_df.loc[best_fold_idx, 'accuracy'],
+        #     'f1': results_df.loc[best_fold_idx, 'f1']
+        # }, best_model_path)
+
+        # print(f"\nBest model saved as single file: {best_model_path}")
+        # print(f"File size: {os.path.getsize(best_model_path) / (1024*1024):.2f} MB")
+
+        # Save the ENTIRE model object
         best_model_path = os.path.join(output_dir, "best_model.pth")
         torch.save({
-            'model_state_dict': best_model.state_dict(),
-            'config': best_model.config,
+            'model': best_model,  # Save the entire trained model object
             'label2id': self.label2id,
             'id2label': self.id2label,
-            'tokenizer': self.tokenizer,  # Save tokenizer configuration
+            'tokenizer': self.tokenizer,
             'fold_num': best_fold_num,
             'accuracy': results_df.loc[best_fold_idx, 'accuracy'],
             'f1': results_df.loc[best_fold_idx, 'f1']
-        }, best_model_path)
+        }, best_model_path, weights_only=False)
 
         print(f"\nBest model saved as single file: {best_model_path}")
-        print(f"File size: {os.path.getsize(best_model_path) / (1024*1024):.2f} MB")
 
     def final_test(self, test_df, model_path):
         """Test the best model loaded from a single .pth file"""
@@ -309,21 +323,32 @@ class ABSAKFoldTrainer:
         print(f"\nFinal Testing on Separate Test Set")
         print("=" * 50)
 
+        # # Load the model from single .pth file
+        # print(f"Loading model from: {model_path}")
+        # checkpoint = torch.load(model_path, map_location='cpu', weights_only=False)
+
+        # # Recreate the model architecture
+        # model = AutoModelForSequenceClassification.from_pretrained(
+        #     self.base_model_name,
+        #     num_labels=len(self.label2id)
+        # )
+
+        # # Load the state dict
+        # model.load_state_dict(checkpoint['model_state_dict'])
+        # model.eval()
+
+        # # Use saved tokenizer or fallback to base tokenizer
+        # tokenizer = checkpoint.get('tokenizer', self.tokenizer)
+
         # Load the model from single .pth file
         print(f"Loading model from: {model_path}")
         checkpoint = torch.load(model_path, map_location='cpu', weights_only=False)
-
-        # Recreate the model architecture
-        model = AutoModelForSequenceClassification.from_pretrained(
-            self.base_model_name,
-            num_labels=len(self.label2id)
-        )
-
-        # Load the state dict
-        model.load_state_dict(checkpoint['model_state_dict'])
+        
+        # Get YOUR trained model directly
+        model = checkpoint['model']
         model.eval()
-
-        # Use saved tokenizer or fallback to base tokenizer
+        
+        # Get tokenizer
         tokenizer = checkpoint.get('tokenizer', self.tokenizer)
 
         predictions = []
