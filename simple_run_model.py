@@ -14,9 +14,9 @@ def install_packages():
                 import google.protobuf
             elif package == "sentencepiece":
                 import sentencepiece
-            print(f"✅ {package} is already installed")
+            print(f"{package} is already installed")
         except ImportError:
-            print(f"📦 Installing {package}...")
+            print(f"Installing {package}...")
             subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 
@@ -65,14 +65,11 @@ def test_absa_model():
         sentence = test["sentence"]
         aspect = test["aspect"]
        
-        print(f"\n📝 Sentence: {sentence}")
-        print(f"🎯 Aspect: {aspect}")
+        print(f"\nSentence: {sentence}")
+        print(f"Aspect: {aspect}")
        
-        try:
-            result = classifier(sentence, text_pair=aspect)
-            print(f"💡 Sentiment: {result}")
-        except Exception as e:
-            print(f"❌ Error: {e}")
+        result = classifier(sentence, text_pair=aspect)
+        print(f"Sentiment: {result}")
 
 
 if __name__ == "__main__":
