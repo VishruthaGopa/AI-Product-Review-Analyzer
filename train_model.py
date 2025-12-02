@@ -323,23 +323,6 @@ class ABSAKFoldTrainer:
         print(f"\nFinal Testing on Separate Test Set")
         print("=" * 50)
 
-        # # Load the model from single .pth file
-        # print(f"Loading model from: {model_path}")
-        # checkpoint = torch.load(model_path, map_location='cpu', weights_only=False)
-
-        # # Recreate the model architecture
-        # model = AutoModelForSequenceClassification.from_pretrained(
-        #     self.base_model_name,
-        #     num_labels=len(self.label2id)
-        # )
-
-        # # Load the state dict
-        # model.load_state_dict(checkpoint['model_state_dict'])
-        # model.eval()
-
-        # # Use saved tokenizer or fallback to base tokenizer
-        # tokenizer = checkpoint.get('tokenizer', self.tokenizer)
-
         # Load the model from single .pth file
         print(f"Loading model from: {model_path}")
         checkpoint = torch.load(model_path, map_location='cpu', weights_only=False)

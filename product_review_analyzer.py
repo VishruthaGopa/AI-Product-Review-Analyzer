@@ -16,11 +16,16 @@ ASPECTS = [
 class ProductReviewAnalyzer:
     def __init__(self, model_path):
         print(f"Loading model from {model_path}")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
+        
+        checkpoint = torch.load(model_path, map_location='cpu', weights_only=False)
+        
+        self.model = checkpoint['model']
         self.model.eval()
-        self.id2label = self.model.config.id2label
-        print("Model loaded successfully!\n")
+        
+        self.id2label = checkpoint['id2label']
+        self.label2id = checkpoint['label2id']
+        
+        self.tokenizer = checkpoint['tokenizer'] 
 
     def predict_sentiment(self, text, aspect):
         inputs = self.tokenizer(
