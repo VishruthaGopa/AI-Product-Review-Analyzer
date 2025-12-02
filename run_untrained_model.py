@@ -7,7 +7,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def test_on_dataset():
     # Load your dataset
-    df = pd.read_csv('dataset.csv')
+    df = pd.read_csv('train_dataset.csv')
     
     # Load pre-trained ABSA model
     print("Loading ABSA model...")
@@ -17,7 +17,7 @@ def test_on_dataset():
     )
     
     # Test on first 10 samples
-    print("\nTesting on first 10 samples from dataset.csv:")
+    print("\nTesting on first 10 samples from train_dataset.csv:")
     print("=" * 80)
     
     correct = 0
