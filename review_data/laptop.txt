@@ -1,17 +1,50 @@
-I am surprised that this 16 inch touchscreen laptop does not have a numeric keypad. Also, there are limited number of USB ports. There are only two USB 2.0 ports and two USB-C 3.0 ports. Lastly, it does not have a battery charging limiter function (e.g. limit charging to 80% to extend battery life).
-Not on the light side; annoying per-installed software. After re-installing Windows the way you like - good product!
-A great laptop, offering reasonable specs, and is able to keep thermals well under control, regularly boosting up to the 3.7 GHz max boost clock. This handles everything from light gaming, to SOLIDWORKS quite well. Of course better options exist for both, but few at this price point and build quality.
-I loved the touchscreen functionality and the processor is able to handle most of the games I play at the settings I like. It will charge off of a USB c cable but you need a 60 watt or 90 watt charger.
-I have had this for a month and it is really a nice complement to my desktop PC. Good for casual web surfing for sure. Also I like the color.
-Five weeks ago, I spent alot of money on a laptop that was hailed by Consumer Reports as a good buy. This machine is a piece of crap! It freezes daily at least 4x daily. Although programmed to shut down once closed, it continues to be on and worst of all even when power button is pushed refuses to turn off. Then I cannot turn it back on. Battery life is about 5 hours. This is the worst laptop I have ever owned!
-Great laptop and great price!! I love it!
-Perfect laptop. Great value of money. A bit heavy due 15.6 size. Next time I will go for 14 inch screen.
-I love this laptop. I am a technology challenged individual, but this HP chromebook is super easy to use and I have it synced with my cellphone. I have had it for almost a month and have only charged it once. I use it for bill paying, emails and shopping. I don't have any complaints.
-It is a rather powerfull laptop, but often freezes for while scrolling webpages pages for second or two. The main problem is that the touch screen, touch pad and power button stop responding altogether intermittently, it can happen couple times per day or may not happen at all. After reboot they begin working again. I have updated BIOS, drivers and Windows to latest versions - no luck.
-A bonus to this laptop is the back lighting on the keypad. Really do you like this laptop lightweight doesn't overheat and have found very little flaws with it. One flaw being camera is not that great.
-About half of keys (buttons) do not function!
-HP tech support was unable to resolve the distorted audio produced by the left laptop speaker. The problem was present the first time I started the computer.
-Would not turn on so unfortunately I had to return it.
-Unfortunately, the touchpad is made of plastic and therefore does not offer a smooth experience. In addition, the cursor is very small and hard to see by default.
-Quality was awful, money is not worth it, did not get to use it, so as of now I would say do NOT buy
-
+The battery keeps going all day and I never worry about charging during long classes.
+The screen looks bright and makes everything feel crisp when I watch shows at night.
+It feels way too expensive for what it offers and I expected more for the cost.
+Sound comes out dull and hollow which makes calls a little frustrating.
+Video calls look surprisingly clear even in my dim room which I did not expect.
+It feels a bit flimsy and the materials do not give me much confidence.
+I really like how clean and simple it looks on my desk.
+I can work for hours because the keyboard feels soft and easy on my hands.
+Apps open quickly and switching between them feels smooth.
+I keep running out of space quicker than I thought but it still handles my files fine.
+It held up well when I accidentally bumped it off the couch which was a relief.
+I like how small it is because it fits easily into my backpack.
+Carrying it around is easy since it does not feel too heavy.
+Everything is easy to navigate and I never feel lost in the menus.
+It charges fast enough that I can get ready for class with only a short plug in.
+Colors look nice and watching videos feels more enjoyable than on my old laptop.
+Even with the discount it still feels overpriced for the performance it gives.
+Voices sound a little fuzzy during calls and I keep adjusting settings with no luck.
+People say I look clear during meetings which is good enough for school.
+After a month it already feels a bit worn which is disappointing.
+The style is minimal and fits well with my other devices.
+The keys feel nice but the wrist area could be softer for long typing sessions.
+It runs fine for homework though it slows down when too many tabs are open.
+I wish I had more room for apps but it works as long as I manage my files.
+It survived a few bumps in my bag without any scratches which is reassuring.
+It feels slightly wider than I prefer but still works for traveling.
+Not too heavy but I do notice the weight on longer walks across campus.
+Sometimes the interface lags which makes tasks take a bit longer.
+Battery stays strong even when I watch videos for hours.
+The screen looks nice indoors but is harder to see outside in bright sunlight.
+Still feels too pricey for students even though it works well for daily use.
+Audio is weak and music sounds distant no matter what settings I change.
+People say my video quality looks decent which is all I really need.
+Better quality than I expected but some parts still feel a little cheap.
+The exterior looks sleek and the texture makes it feel more high end.
+Overall comfortable but the trackpad sometimes feels stiff.
+It handles light gaming surprisingly well and switches tasks quickly.
+Storage fills up once I download large assignments so I need to clean it often.
+It feels sturdy on top but the bottom panel bends slightly which worries me.
+The size is perfect for working in small spaces like coffee shops.
+A bit heavier than I hoped and my shoulders feel it after long days.
+The layout is easy to use and settings are simple to adjust.
+Battery life stays strong even while studying with multiple apps open.
+The screen looks good though reflections can get annoying under bright lights.
+Honestly still too pricey for the level of performance it offers.
+The speakers are barely clear and I have trouble hearing dialogue.
+My video looks fine but it sometimes struggles to focus quickly when I move.
+It works fine but the build feels cheaper than I would like.
+The simple look makes it feel more premium without being flashy.
+Typing feels great and I can work for long sessions without my hands getting tired.
