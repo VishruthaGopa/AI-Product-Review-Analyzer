@@ -178,28 +178,25 @@ def create_summary_report(df, scores_df, output_folder):
     weaknesses = aspect_sentiment_table.sort_values(by="negative", ascending=False).head(3)
     
     report.append(f"\n=== ASPECT FREQUENCY TABLE ===")
+    report.append('')
     report.append(f"{'aspect':20} {'negative':<10} {'positive':<10}")
-    report.append(f"{'':<20} {'':<10} {'':<10}")
     report.append('-' * 60)
-    
     for aspect in ASPECTS:
         if aspect in aspect_sentiment_table.index:
             row = aspect_sentiment_table.loc[aspect]
             report.append(f"{aspect:<20} {int(row.get('negative', 0)):<10}" f"{int(row.get('positive', 0)):<10}")
     
     report.append("\n=== TOP STRENGTHS (Most Positive Mentions) ===")
+    report.append('')
     report.append(f"{'aspect':20} {'positive':<10} {'total':<10}")
-    report.append(f"{'':<20} {'':<10} {'':<10}")
     report.append('-' * 40)
-    
     for _, (aspect, row) in enumerate(strengths.iterrows(), 1):
         report.append(f"{aspect:<20} {int(row.get('positive', 0)):<10} {int(row.get('total', 0)):<10}")
     
     report.append("\n=== TOP WEAKNESSES (Most Negative Mentions) ===")
+    report.append('')
     report.append(f"{'aspect':20} {'negative':<10} {'total':<10}")
-    report.append(f"{'':<20} {'':<10} {'':<10}")
     report.append('-' * 40)
-    
     for _, (aspect, row) in enumerate(weaknesses.iterrows(), 1):
         report.append(f"{aspect:<20} {int(row.get('negative', 0)):<10} {int(row.get('total', 0)):<10}")
         
