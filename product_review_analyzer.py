@@ -9,11 +9,11 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-# Set Seaborn style
+# Seaborn style
 sns.set_style("whitegrid")
 sns.set_palette("husl")
 
-# Hard-coded aspects to check in reviews
+# Aspects to check in reviews
 ASPECTS = [
     "Battery", "Display", "Price", "Features", "Audio", "Camera",
     "Quality", "Design", "Comfort", "Speed", "Storage", "Durability",
@@ -56,7 +56,7 @@ class ProductReviewAnalyzer:
                 "review": review_text,
                 "aspect": aspect,
                 "sentiment": sentiment,
-                "confidence": max(confidence)  # Highest class probability
+                "confidence": max(confidence)  #highest class probability
             })
         return results
 
@@ -68,7 +68,7 @@ class ProductReviewAnalyzer:
 
 
 def visualize_sentiment_distribution(df, output_folder):    
-    # 1. Sentiment Distribution Across All Aspects
+    # 1. Sentiment Distribution across all aspects
     plt.figure(figsize=(12, 6))
     sentiment_counts = df['sentiment'].value_counts()
     colors = {'negative': '#FF6B6B', 'neutral': '#FFD166', 'positive': '#06D6A0'}
@@ -88,12 +88,12 @@ def visualize_sentiment_distribution(df, output_folder):
     plt.savefig(os.path.join(output_folder, 'sentiment_distribution.png'), dpi=300)
     plt.show()
     
-    # 2. Heatmap of Sentiment by Aspect
+    # 2. Heatmap of Sentiment by aspect
     plt.figure(figsize=(14, 8))
     pivot_df = df.pivot_table(index='aspect', columns='sentiment', 
                              aggfunc='size', fill_value=0)
-    pivot_df = pivot_df.reindex(ASPECTS)  # Keep aspect order
-    pivot_df = pivot_df[['negative', 'neutral', 'positive']]  # Keep sentiment order
+    pivot_df = pivot_df.reindex(ASPECTS)  #keep aspect order
+    pivot_df = pivot_df[['negative', 'positive']]
     
     sns.heatmap(pivot_df, annot=True, fmt='d', cmap='YlOrRd', linewidths=0.5)
     plt.title('Sentiment Heatmap by Aspect', fontsize=14)
@@ -105,7 +105,7 @@ def visualize_sentiment_distribution(df, output_folder):
 
 
 def calculate_sentiment_scores(df, output_folder):    
-    # 1. Sentiment Scores per Aspect
+    # 1. Sentiment Scores per aspect
     aspect_scores = []
     for aspect in ASPECTS:
         aspect_data = df[df['aspect'] == aspect]
@@ -133,16 +133,16 @@ def calculate_sentiment_scores(df, output_folder):
     
     scores_df = pd.DataFrame(aspect_scores)
     
-    # 2. Create Net Sentiment Bar Plot
+    # 2. Create Net Sentiment bar graph
     plt.figure(figsize=(12, 6))
     scores_sorted = scores_df.sort_values('net_sentiment_score')
     
     colors = []
     for score in scores_sorted['net_sentiment_score']:
         if score > 0:
-            colors.append('#06D6A0')  # Green for positive
+            colors.append('#06D6A0')  #Green for positive
         elif score < 0:
-            colors.append('#FF6B6B')  # Red for negative
+            colors.append('#FF6B6B')  #Red for negative
         else:
             colors.append('#FFD166')  # Yellow for neutral
     
@@ -160,15 +160,11 @@ def calculate_sentiment_scores(df, output_folder):
 
 
 def create_summary_report(df, scores_df, output_folder):
-    """Generate a comprehensive summary report"""
-    
     report = []
     report.append("=" * 60)
     report.append("PRODUCT REVIEW ANALYSIS SUMMARY REPORT")
     report.append("=" * 60)
     report.append(f"\nTotal Reviews Analyzed: {df['review'].nunique()}")
-    report.append(f"Total Aspect Mentions: {len(df)}")
-    report.append(f"Aspects Analyzed: {len(ASPECTS)}")
     
     # Overall sentiment
     overall_sentiment = df['sentiment'].value_counts(normalize=True)
@@ -176,40 +172,59 @@ def create_summary_report(df, scores_df, output_folder):
     for sentiment, percentage in overall_sentiment.items():
         report.append(f"  {sentiment.capitalize()}: {percentage:.1%}")
     
-    # Top aspects by mention frequency
-    top_aspects = df['aspect'].value_counts().head(5)
-    report.append(f"\nTop 5 Most Discussed Aspects:")
-    for aspect, count in top_aspects.items():
-        report.append(f"  {aspect}: {count} mentions")
+    #create aspect frequency table
+    freq = df.groupby(["aspect", "sentiment"]).size().reset_index(name="count")
+    pivot = freq.pivot(index="aspect", columns="sentiment", values="count").fillna(0)
+    pivot.columns = [col.lower() for col in pivot.columns]
     
-    # Best and worst performing aspects
-    if not scores_df.empty:
-        best_aspect = scores_df.loc[scores_df['net_sentiment_score'].idxmax()]
-        worst_aspect = scores_df.loc[scores_df['net_sentiment_score'].idxmin()]
+    #add to get total column
+    pivot["total"] = pivot["negative"] + pivot["neutral"] + pivot["positive"]
+    
+    # Reorder aspects based on ASPECTS list
+    pivot = pivot.reindex(ASPECTS)
+    
+    #get top strengths and weaknesses
+    strengths = pivot.sort_values(by="positive", ascending=False).head(3)
+    weaknesses = pivot.sort_values(by="negative", ascending=False).head(3)
+    
+    report.append(f"\n=== MOST DISSCUSSED ASPECTS ===")
+    report.append("")
+    report.append(f"{'':20} {'negative':<10} {'neutral':<10} {'positive':<10} {'total':<10}")
+    report.append(f"{'aspect':<20} {'':<10} {'':<10} {'':<10} {'':<10}")
+    report.append('-' * 60)
+    
+    for aspect in ASPECTS:
+        if aspect in pivot.index:
+            row = pivot.loc[aspect]
+            report.append(f"{aspect:<20} {int(row.get('negative', 0)):<10} {int(row.get('neutral', 0)):<10} "
+                         f"{int(row.get('positive', 0)):<10} {int(row.get('total', 0)):<10}")
+    
+    report.append("\n=== TOP STRENGTHS (Most Positive Mentions) ===")
+    report.append("")
+    report.append(f"{'':20} {'positive':<10} {'total':<10}")
+    report.append(f"{'aspect':<20} {'':<10} {'':<10}")
+    report.append('-' * 40)
+    
+    for idx, (aspect, row) in enumerate(strengths.iterrows(), 1):
+        report.append(f"{aspect:<20} {int(row.get('positive', 0)):<10} {int(row.get('total', 0)):<10}")
+    
+    report.append("\n=== TOP WEAKNESSES (Most Negative Mentions) ===")
+    report.append("")
+    report.append(f"{'':20} {'negative':<10} {'total':<10}")
+    report.append(f"{'aspect':<20} {'':<10} {'':<10}")
+    report.append('-' * 40)
+    
+    for idx, (aspect, row) in enumerate(weaknesses.iterrows(), 1):
+        report.append(f"{aspect:<20} {int(row.get('negative', 0)):<10} {int(row.get('total', 0)):<10}")
         
-        report.append(f"\nBest Performing Aspect:")
-        report.append(f"  {best_aspect['aspect']} (Net Score: {best_aspect['net_sentiment_score']:.3f}, "
-                     f"Positive Ratio: {best_aspect['positive_ratio']:.1%})")
-        
-        report.append(f"\nWorst Performing Aspect:")
-        report.append(f"  {worst_aspect['aspect']} (Net Score: {worst_aspect['net_sentiment_score']:.3f}, "
-                     f"Negative Ratio: {worst_aspect['negative_count']/worst_aspect['total_mentions']:.1%})")
-    
-    # Sentiment confidence
-    avg_confidence = df.groupby('sentiment')['confidence'].mean()
-    report.append(f"\nAverage Confidence by Sentiment:")
-    for sentiment, conf in avg_confidence.items():
-        report.append(f"  {sentiment.capitalize()}: {conf:.3f}")
-    
-    # Save report
+    #save report
     report_text = "\n".join(report)
     with open(os.path.join(output_folder, 'analysis_report.txt'), 'w') as f:
         f.write(report_text)
     
     print(report_text)
     
-    return report_text
-
+    return report_text, pivot, strengths, weaknesses
 
 def main():
     parser = argparse.ArgumentParser(description="Run analyzer on product reviews")
@@ -246,14 +261,18 @@ def main():
     scores_df.to_csv(os.path.join(output_folder, 'sentiment_scores.csv'), index=False)
         
     # Create comprehensive report
-    report = create_summary_report(df, scores_df, output_folder)
+    report, pivot, strengths, weaknesses = create_summary_report(df, scores_df, output_folder)
+
+    # Also save the pivot table for reference
+    pivot.to_csv(os.path.join(output_folder, 'aspect_frequency_table.csv'))
+
     
     print(f"\nAll analysis completed!")
     print(f"Results saved to: {output_folder}")
     print(f"Files created:")
     print(f"  - predictions.csv (raw predictions)")
     print(f"  - sentiment_scores.csv (aspect-level metrics)")
-    print(f"  - 5 visualization PNG files")
+    print(f"  - 3 visualization PNG files")
     print(f"  - analysis_report.txt (summary report)")
 
 if __name__ == "__main__":
