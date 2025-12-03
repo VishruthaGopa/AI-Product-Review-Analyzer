@@ -188,7 +188,6 @@ def create_summary_report(df, scores_df, output_folder):
     weaknesses = pivot.sort_values(by="negative", ascending=False).head(3)
     
     report.append(f"\n=== ASPECT FREQUENCY TABLE ===")
-    report.append("")
     report.append(f"{'':20} {'negative':<10} {'positive':<10}")
     report.append(f"{'aspect':<20} {'':<10} {'':<10}")
     report.append('-' * 60)
@@ -200,7 +199,6 @@ def create_summary_report(df, scores_df, output_folder):
                          f"{int(row.get('positive', 0)):<10} {int(row.get('total', 0)):<10}")
     
     report.append("\n=== TOP STRENGTHS (Most Positive Mentions) ===")
-    report.append("")
     report.append(f"{'':20} {'positive':<10} {'total':<10}")
     report.append(f"{'aspect':<20} {'':<10} {'':<10}")
     report.append('-' * 40)
@@ -209,7 +207,6 @@ def create_summary_report(df, scores_df, output_folder):
         report.append(f"{aspect:<20} {int(row.get('positive', 0)):<10} {int(row.get('total', 0)):<10}")
     
     report.append("\n=== TOP WEAKNESSES (Most Negative Mentions) ===")
-    report.append("")
     report.append(f"{'':20} {'negative':<10} {'total':<10}")
     report.append(f"{'aspect':<20} {'':<10} {'':<10}")
     report.append('-' * 40)
