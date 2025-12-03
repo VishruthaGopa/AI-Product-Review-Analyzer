@@ -181,7 +181,7 @@ def create_summary_report(df, scores_df, output_folder):
     report.append(f"\n=== ASPECT FREQUENCY TABLE ===")
     report.append('')
     report.append(f"{'aspect':20} {'negative':<10} {'positive':<10}")
-    report.append('-' * 60)
+    report.append('-' * 40)
     for aspect in ASPECTS:
         if aspect in aspect_sentiment_table.index:
             row = aspect_sentiment_table.loc[aspect]
