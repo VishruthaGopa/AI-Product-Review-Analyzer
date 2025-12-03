@@ -2,8 +2,7 @@ import os
 import sys
 import subprocess
 
-
-# Install required packages
+#Install required packages
 def install_packages():
     required_packages = ["tiktoken", "protobuf", "sentencepiece"]
     for package in required_packages:
@@ -23,28 +22,15 @@ def install_packages():
 install_packages()
 
 
-# Now import and use the model
 from transformers import pipeline
 
-
-# Set environment variable to avoid tokenizer parallelism issues
+#set environment variable to avoid tokenizer parallelism issues
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
 def test_absa_model():
-    try:
-        # Try with fast tokenizer first
-        classifier = pipeline("text-classification", model="yangheng/deberta-v3-large-absa-v1.1")
-    except Exception as e:
-        print(f"Fast tokenizer failed: {e}")
-        print("Trying with slow tokenizer...")
-        # Fall back to slow tokenizer
-        classifier = pipeline(
-            "text-classification",
-            model="yangheng/deberta-v3-large-absa-v1.1",
-            use_fast=False
-        )
-   
+    classifier = pipeline("text-classification", model="yangheng/deberta-v3-large-absa-v1.1")
+
     # Test sentences and aspects
     test_cases = [
         {

@@ -275,7 +275,7 @@ class ABSAKFoldTrainer:
         return results_df
 
     def save_best_model_single_file(self, results_df, models, output_dir):
-        """Save the best model as a single .pth file"""
+        #Save the best model as a single .pth file
         print(f"\nSaving results to: {output_dir}/cv_results.csv")
 
         # Find the best fold based on validation accuracy
@@ -318,7 +318,7 @@ class ABSAKFoldTrainer:
         print(f"\nBest model saved as single file: {best_model_path}")
 
     def final_test(self, test_df, model_path):
-        """Test the best model loaded from a single .pth file"""
+        #Test the best model loaded from a single .pth file
 
         print(f"\nFinal Testing on Separate Test Set")
         print("=" * 50)

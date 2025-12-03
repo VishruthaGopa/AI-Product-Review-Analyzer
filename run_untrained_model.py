@@ -21,7 +21,7 @@ def test_on_dataset():
     print("=" * 80)
     
     correct = 0
-    total = min(493, len(df))
+    total = min(20, len(df))
     
     for i in range(total):
         row = df.iloc[i]
@@ -29,34 +29,30 @@ def test_on_dataset():
         aspect = row['aspect']
         true_sentiment = row['sentiment'].lower()
         
-        try:
-            # ABSA format: (text, aspect)
-            result = classifier(text, text_pair=aspect)
-            pred = result[0]['label'].lower()
-            confidence = result[0]['score']
+        # ABSA format
+        result = classifier(text, text_pair=aspect)
+        pred = result[0]['label'].lower()
+        confidence = result[0]['score']
+        
+        if 'pos' in pred:
+            pred = 'positive'
+        elif 'neg' in pred:
+            pred = 'negative'
+        elif 'neu' in pred:
+            pred = 'neutral'
+        
+        is_correct = pred == true_sentiment
+        if is_correct:
+            correct += 1
+        
+        symbol = "✓" if is_correct else "✗"
+        print(f"{symbol} '{text[:50]}...'")
+        print(f"  Aspect: {aspect}")
+        print(f"  True: {true_sentiment} | Pred: {pred} ({confidence:.2%})")
+        print()
             
-            # Standardize label
-            if 'pos' in pred:
-                pred = 'positive'
-            elif 'neg' in pred:
-                pred = 'negative'
-            elif 'neu' in pred:
-                pred = 'neutral'
-            
-            is_correct = pred == true_sentiment
-            if is_correct:
-                correct += 1
-            
-            symbol = "✓" if is_correct else "✗"
-            print(f"{symbol} '{text[:50]}...'")
-            print(f"  Aspect: {aspect}")
-            print(f"  True: {true_sentiment} | Pred: {pred} ({confidence:.2%})")
-            print()
-            
-        except Exception as e:
-            print(f"❌ Error on sample {i}: {e}")
     
-    print(f"\n📊 Accuracy on {total} samples: {correct/total:.0%}")
+    print(f"\n Accuracy on {total} samples: {correct/total:.0%}")
 
 if __name__ == "__main__":
     test_on_dataset()
