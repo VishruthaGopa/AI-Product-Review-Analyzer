@@ -71,7 +71,7 @@ class ProductReviewAnalyzer:
 
 
 def visualize_sentiment_distribution(df, output_folder):    
-    # 1. Sentiment Distribution across all aspects
+    # 1. Bar chart showing total positive vs negative mentions
     plt.figure(figsize=(12, 6))
     sns.countplot(data=df, x='sentiment', order=['negative', 'positive'], palette=SENTIMENT_COLORS)
     plt.title('Sentiment Counts')
@@ -81,10 +81,9 @@ def visualize_sentiment_distribution(df, output_folder):
     plt.savefig(os.path.join(output_folder, 'sentiment_distribution.png'), dpi=300)
     plt.show()
     
-    # 2. Heatmap of sentiment by aspect
+    # 2. Heatmap showing sentiment counts for each aspect
     plt.figure(figsize=(14, 8))
-    pivot_df = df.pivot_table(index='aspect', columns='sentiment', 
-                             aggfunc='size', fill_value=0)
+    pivot_df = df.pivot_table(index='aspect', columns='sentiment', aggfunc='size', fill_value=0) #aggfunc='size' counts occurrences
     pivot_df = pivot_df.reindex(ASPECTS)  #keep aspect order
     pivot_df = pivot_df[['negative', 'positive']]
     
@@ -104,21 +103,23 @@ def calculate_sentiment_scores(df, output_folder):
         aspect_data = df[df['aspect'] == aspect]
         total = len(aspect_data)
         if total > 0:
-            pos_count = (aspect_data['sentiment'] == 'positive').sum()
-            neg_count = (aspect_data['sentiment'] == 'negative').sum()
+            pos_count=(aspect_data['sentiment'] == 'positive').sum()
+            neg_count=(aspect_data['sentiment'] == 'negative').sum()
             
             # Net sentiment score (-1 to 1)
-            net_score = (pos_count - neg_count) / total if total > 0 else 0
+            #Ex. 8 positive, 2 negative, 10 total --> (8-2)/10 = 0.6 (mostly positive)
+            net_score=(pos_count - neg_count)/total if total>0 else 0
             
             # Positive ratio
-            pos_ratio = pos_count / total if total > 0 else 0
+            #Ex. 8 positive, 2 negative, 10 total --> 8/10 = 0.8
+            pos_ratio =pos_count / total if total > 0 else 0
             
             aspect_scores.append({
                 'aspect': aspect,
                 'total_mentions': total,
                 'positive_count': pos_count,
                 'negative_count': neg_count,
-                'neutral_count': (aspect_data['sentiment'] == 'neutral').sum(),
+                'neutral_count': (aspect_data['sentiment'] =='neutral').sum(),
                 'net_sentiment_score': net_score,
                 'positive_ratio': pos_ratio,
                 'confidence_avg': aspect_data['confidence'].mean()
@@ -126,7 +127,7 @@ def calculate_sentiment_scores(df, output_folder):
     
     scores_df = pd.DataFrame(aspect_scores)
     
-    # 2. Create net sentiment bar graph
+    # 2. Create net sentiment horizontal bar chart
     plt.figure(figsize=(12, 6))
     scores_sorted = scores_df.sort_values('net_sentiment_score')
     
@@ -168,8 +169,6 @@ def create_summary_report(df, scores_df, output_folder):
     freq = df.groupby(["aspect", "sentiment"]).size().reset_index(name="count")
     aspect_sentiment_table = freq.pivot(index="aspect", columns="sentiment", values="count").fillna(0)
     aspect_sentiment_table.columns = [col.lower() for col in aspect_sentiment_table.columns]
-    
-    #add to get total column
     aspect_sentiment_table["total"] = aspect_sentiment_table["negative"] + aspect_sentiment_table["neutral"] + aspect_sentiment_table["positive"]
     
     # Reorder aspects based on ASPECTS list
