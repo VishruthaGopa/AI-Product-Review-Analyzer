@@ -67,9 +67,7 @@ class ProductReviewAnalyzer:
         return pd.DataFrame(all_rows)
 
 
-def visualize_sentiment_distribution(df, output_folder):
-    """Create comprehensive visualizations for sentiment analysis"""
-    
+def visualize_sentiment_distribution(df, output_folder):    
     # 1. Sentiment Distribution Across All Aspects
     plt.figure(figsize=(12, 6))
     sentiment_counts = df['sentiment'].value_counts()
@@ -104,43 +102,9 @@ def visualize_sentiment_distribution(df, output_folder):
     plt.tight_layout()
     plt.savefig(os.path.join(output_folder, 'sentiment_heatmap.png'), dpi=300)
     plt.show()
-    
-    # 3. Aspect Performance Radar Chart
-    from math import pi
-    sentiments = ['negative', 'neutral', 'positive']
-    aspect_sentiment = df.groupby(['aspect', 'sentiment']).size().unstack(fill_value=0)
-    aspect_sentiment = aspect_sentiment.reindex(ASPECTS)
-    
-    # Normalize by total mentions per aspect
-    aspect_sentiment_pct = aspect_sentiment.div(aspect_sentiment.sum(axis=1), axis=0)
-    
-    fig, axes = plt.subplots(3, 5, figsize=(20, 12), subplot_kw=dict(projection='polar'))
-    axes = axes.flatten()
-    
-    for idx, aspect in enumerate(ASPECTS[:15]):  # Limit to 15 for display
-        ax = axes[idx]
-        values = aspect_sentiment_pct.loc[aspect].reindex(sentiments).fillna(0).tolist()
-        values += values[:1]  # Close the polygon
-        
-        angles = [n/float(len(sentiments))*2*pi for n in range(len(sentiments))]
-        angles += angles[:1]
-        
-        ax.plot(angles, values, 'o-', linewidth=2)
-        ax.fill(angles, values, alpha=0.25)
-        ax.set_xticks(angles[:-1])
-        ax.set_xticklabels(sentiments)
-        ax.set_title(aspect, size=10, y=1.1)
-        ax.set_ylim(0, 1)
-    
-    plt.suptitle('Sentiment Distribution by Aspect (Radar Charts)', fontsize=16, y=1.02)
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, 'aspect_radar_charts.png'), dpi=300, bbox_inches='tight')
-    plt.show()
 
 
-def calculate_sentiment_scores(df, output_folder):
-    """Calculate various sentiment metrics"""
-    
+def calculate_sentiment_scores(df, output_folder):    
     # 1. Sentiment Scores per Aspect
     aspect_scores = []
     for aspect in ASPECTS:
@@ -191,67 +155,8 @@ def calculate_sentiment_scores(df, output_folder):
     plt.savefig(os.path.join(output_folder, 'net_sentiment_scores.png'), dpi=300)
     plt.show()
     
-    # 3. Confidence Distribution
-    plt.figure(figsize=(12, 5))
-    
-    plt.subplot(1, 2, 1)
-    sns.histplot(data=df, x='confidence', hue='sentiment', 
-                 palette={'negative': '#FF6B6B', 'neutral': '#FFD166', 'positive': '#06D6A0'},
-                 kde=True, bins=20)
-    plt.title('Confidence Distribution by Sentiment')
-    plt.xlabel('Confidence Score')
-    plt.ylabel('Count')
-    
-    plt.subplot(1, 2, 2)
-    sns.boxplot(data=df, x='sentiment', y='confidence', 
-                order=['negative', 'neutral', 'positive'],
-                palette={'negative': '#FF6B6B', 'neutral': '#FFD166', 'positive': '#06D6A0'})
-    plt.title('Confidence by Sentiment')
-    plt.xlabel('Sentiment')
-    plt.ylabel('Confidence Score')
-    
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, 'confidence_analysis.png'), dpi=300)
-    plt.show()
     
     return scores_df
-
-
-def analyze_review_length_impact(df, output_folder):
-    """Analyze relationship between review length and sentiment"""
-    
-    # Add review length feature
-    df['review_length'] = df['review'].apply(lambda x: len(str(x).split()))
-    df['review_length_category'] = pd.cut(df['review_length'], 
-                                         bins=[0, 50, 100, 200, 500, 1000],
-                                         labels=['Very Short', 'Short', 'Medium', 'Long', 'Very Long'])
-    
-    # 1. Review Length vs Sentiment
-    plt.figure(figsize=(14, 6))
-    
-    plt.subplot(1, 2, 1)
-    length_sentiment = df.groupby(['review_length_category', 'sentiment']).size().unstack()
-    length_sentiment.plot(kind='bar', stacked=True, 
-                         color=['#FF6B6B', '#FFD166', '#06D6A0'])
-    plt.title('Sentiment Distribution by Review Length')
-    plt.xlabel('Review Length Category')
-    plt.ylabel('Count')
-    plt.legend(title='Sentiment')
-    plt.xticks(rotation=45)
-    
-    plt.subplot(1, 2, 2)
-    sns.violinplot(data=df, x='sentiment', y='review_length', 
-                   order=['negative', 'neutral', 'positive'],
-                   palette={'negative': '#FF6B6B', 'neutral': '#FFD166', 'positive': '#06D6A0'})
-    plt.title('Review Length Distribution by Sentiment')
-    plt.xlabel('Sentiment')
-    plt.ylabel('Review Length (words)')
-    
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, 'review_length_analysis.png'), dpi=300)
-    plt.show()
-    
-    return df
 
 
 def create_summary_report(df, scores_df, output_folder):
@@ -339,11 +244,7 @@ def main():
     # Calculate sentiment scores
     scores_df = calculate_sentiment_scores(df, output_folder)
     scores_df.to_csv(os.path.join(output_folder, 'sentiment_scores.csv'), index=False)
-    
-    # Analyze review length impact
-    df_with_length = analyze_review_length_impact(df, output_folder)
-    df_with_length.to_csv(os.path.join(output_folder, 'predictions_with_length.csv'), index=False)
-    
+        
     # Create comprehensive report
     report = create_summary_report(df, scores_df, output_folder)
     
@@ -351,7 +252,6 @@ def main():
     print(f"Results saved to: {output_folder}")
     print(f"Files created:")
     print(f"  - predictions.csv (raw predictions)")
-    print(f"  - predictions_with_length.csv (with length features)")
     print(f"  - sentiment_scores.csv (aspect-level metrics)")
     print(f"  - 5 visualization PNG files")
     print(f"  - analysis_report.txt (summary report)")
