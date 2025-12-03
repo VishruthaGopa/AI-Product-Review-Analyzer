@@ -70,17 +70,10 @@ class ProductReviewAnalyzer:
 def visualize_sentiment_distribution(df, output_folder):    
     # 1. Sentiment Distribution across all aspects
     plt.figure(figsize=(12, 6))
-    sentiment_counts = df['sentiment'].value_counts()
     colors = {'negative': '#FF6B6B', 'neutral': '#FFD166', 'positive': '#06D6A0'}
-    
-    plt.subplot(1, 2, 1)
-    plt.pie(sentiment_counts.values, labels=sentiment_counts.index, 
-            autopct='%1.1f%%', colors=[colors.get(x, '#999') for x in sentiment_counts.index])
-    plt.title('Overall Sentiment Distribution')
-    
+        
     plt.subplot(1, 2, 2)
-    sns.countplot(data=df, x='sentiment', order=['negative', 'neutral', 'positive'],
-                  palette=colors)
+    sns.countplot(data=df, x='sentiment', order=['negative', 'positive'], palette=colors)
     plt.title('Sentiment Counts')
     plt.xlabel('Sentiment')
     plt.ylabel('Count')
@@ -188,27 +181,26 @@ def create_summary_report(df, scores_df, output_folder):
     weaknesses = pivot.sort_values(by="negative", ascending=False).head(3)
     
     report.append(f"\n=== ASPECT FREQUENCY TABLE ===")
-    report.append(f"{'':20} {'negative':<10} {'positive':<10}")
-    report.append(f"{'aspect':<20} {'':<10} {'':<10}")
+    report.append(f"{'aspect':20} {'negative':<10} {'positive':<10}")
+    report.append(f"{'':<20} {'':<10} {'':<10}")
     report.append('-' * 60)
     
     for aspect in ASPECTS:
         if aspect in pivot.index:
             row = pivot.loc[aspect]
-            report.append(f"{aspect:<20} {int(row.get('negative', 0)):<10} {int(row.get('neutral', 0)):<10} "
-                         f"{int(row.get('positive', 0)):<10} {int(row.get('total', 0)):<10}")
+            report.append(f"{aspect:<20} {int(row.get('negative', 0)):<10}" f"{int(row.get('positive', 0)):<10}")
     
     report.append("\n=== TOP STRENGTHS (Most Positive Mentions) ===")
-    report.append(f"{'':20} {'positive':<10} {'total':<10}")
-    report.append(f"{'aspect':<20} {'':<10} {'':<10}")
+    report.append(f"{'aspect':20} {'positive':<10} {'total':<10}")
+    report.append(f"{'':<20} {'':<10} {'':<10}")
     report.append('-' * 40)
     
     for idx, (aspect, row) in enumerate(strengths.iterrows(), 1):
         report.append(f"{aspect:<20} {int(row.get('positive', 0)):<10} {int(row.get('total', 0)):<10}")
     
     report.append("\n=== TOP WEAKNESSES (Most Negative Mentions) ===")
-    report.append(f"{'':20} {'negative':<10} {'total':<10}")
-    report.append(f"{'aspect':<20} {'':<10} {'':<10}")
+    report.append(f"{'aspect':20} {'negative':<10} {'total':<10}")
+    report.append(f"{'':<20} {'':<10} {'':<10}")
     report.append('-' * 40)
     
     for idx, (aspect, row) in enumerate(weaknesses.iterrows(), 1):
