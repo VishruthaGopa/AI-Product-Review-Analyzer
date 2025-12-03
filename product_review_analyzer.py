@@ -34,9 +34,7 @@ class ProductReviewAnalyzer:
         self.model = checkpoint['model']
         self.model.eval()
         
-        self.id2label = checkpoint['id2label']
-        self.label2id = checkpoint['label2id']
-        
+        self.id2label = checkpoint['id2label']        
         self.tokenizer = checkpoint['tokenizer']
 
     def predict_sentiment(self, text, aspect):
@@ -75,7 +73,6 @@ class ProductReviewAnalyzer:
 def visualize_sentiment_distribution(df, output_folder):    
     # 1. Sentiment Distribution across all aspects
     plt.figure(figsize=(12, 6))
-    colors = {'negative': '#FF6B6B', 'positive': '#06D6A0'}        
     sns.countplot(data=df, x='sentiment', order=['negative', 'positive'], palette=SENTIMENT_COLORS)
     plt.title('Sentiment Counts')
     plt.xlabel('Sentiment')
@@ -249,10 +246,10 @@ def main():
     scores_df.to_csv(os.path.join(output_folder, 'sentiment_scores.csv'), index=False)
         
     # Create summary report
-    report, pivot, strengths, weaknesses = create_summary_report(df, scores_df, output_folder)
+    report, aspect_sentiment_table, strengths, weaknesses = create_summary_report(df, scores_df, output_folder)
 
     # Also save the aspect_sentiment_table for reference
-    pivot.to_csv(os.path.join(output_folder, 'aspect_frequency_table.csv'))
+    aspect_sentiment_table.to_csv(os.path.join(output_folder, 'aspect_frequency_table.csv'))
 
     
     print(f"\nAll analysis completed!")
