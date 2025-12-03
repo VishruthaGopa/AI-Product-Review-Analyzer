@@ -18,6 +18,13 @@ ASPECTS = [
     "Size", "Weight", "User Experience"
 ]
 
+# Sentiment color mapping
+SENTIMENT_COLORS = {
+    'negative': '#FF6B6B',
+    'neutral': '#FFD166',
+    'positive': '#06D6A0'
+}
+
 class ProductReviewAnalyzer:
     def __init__(self, model_path):
         print(f"Loading model from {model_path}")
@@ -68,10 +75,8 @@ class ProductReviewAnalyzer:
 def visualize_sentiment_distribution(df, output_folder):    
     # 1. Sentiment Distribution across all aspects
     plt.figure(figsize=(12, 6))
-    colors = {'negative': '#FF6B6B', 'neutral': '#FFD166', 'positive': '#06D6A0'}
-        
-    plt.subplot(1, 2, 2)
-    sns.countplot(data=df, x='sentiment', order=['negative', 'positive'], palette=colors)
+    colors = {'negative': '#FF6B6B', 'positive': '#06D6A0'}        
+    sns.countplot(data=df, x='sentiment', order=['negative', 'positive'], palette=SENTIMENT_COLORS)
     plt.title('Sentiment Counts')
     plt.xlabel('Sentiment')
     plt.ylabel('Count')
@@ -131,11 +136,11 @@ def calculate_sentiment_scores(df, output_folder):
     colors = []
     for score in scores_sorted['net_sentiment_score']:
         if score > 0:
-            colors.append('#06D6A0')#Green for positive
+            colors.append(SENTIMENT_COLORS['positive']) #green
         elif score < 0:
-            colors.append('#FF6B6B')#Red for negative
+            colors.append(SENTIMENT_COLORS['negative']) #red
         else:
-            colors.append('#FFD166')#Yellow for neutral
+            colors.append(SENTIMENT_COLORS['neutral']) #yellow
     
     bars = plt.barh(scores_sorted['aspect'], scores_sorted['net_sentiment_score'], 
                     color=colors, edgecolor='black')
