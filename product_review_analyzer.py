@@ -187,7 +187,7 @@ def create_summary_report(df, scores_df, output_folder):
     strengths = pivot.sort_values(by="positive", ascending=False).head(3)
     weaknesses = pivot.sort_values(by="negative", ascending=False).head(3)
     
-    report.append(f"\n=== MOST DISSCUSSED ASPECTS ===")
+    report.append(f"\n=== ASPECT FREQUENCY TABLE ===")
     report.append("")
     report.append(f"{'':20} {'negative':<10} {'positive':<10}")
     report.append(f"{'aspect':<20} {'':<10} {'':<10}")
