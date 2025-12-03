@@ -189,8 +189,8 @@ def create_summary_report(df, scores_df, output_folder):
     
     report.append(f"\n=== MOST DISSCUSSED ASPECTS ===")
     report.append("")
-    report.append(f"{'':20} {'negative':<10} {'neutral':<10} {'positive':<10} {'total':<10}")
-    report.append(f"{'aspect':<20} {'':<10} {'':<10} {'':<10} {'':<10}")
+    report.append(f"{'':20} {'negative':<10} {'positive':<10}")
+    report.append(f"{'aspect':<20} {'':<10} {'':<10}")
     report.append('-' * 60)
     
     for aspect in ASPECTS:
