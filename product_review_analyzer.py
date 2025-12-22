@@ -29,13 +29,14 @@ class ProductReviewAnalyzer:
     def __init__(self, model_path):
         print(f"Loading model from {model_path}")
         
-        checkpoint = torch.load(model_path, map_location='cpu', weights_only=False)
+        # load the saved model
+        load_saved_model = torch.load(model_path, map_location='cpu', weights_only=False)
         
-        self.model = checkpoint['model']
+        self.model = load_saved_model['model']
         self.model.eval()
         
-        self.id2label = checkpoint['id2label']        
-        self.tokenizer = checkpoint['tokenizer']
+        self.id2label = load_saved_model['id2label']        
+        self.tokenizer = load_saved_model['tokenizer']
 
     def predict_sentiment(self, text, aspect):
         inputs = self.tokenizer(
@@ -46,12 +47,12 @@ class ProductReviewAnalyzer:
             return_tensors="pt"
         )
         with torch.no_grad():
-            logits = self.model(**inputs).logits
-            probs = torch.softmax(logits, dim=1)
+            scores = self.model(**inputs).logits
+            probs = torch.softmax(scores, dim=1)
             pred_id = torch.argmax(probs, dim=1).item()
         return self.id2label[pred_id], probs[0].tolist()
 
-    def analyze_review(self, review_text):
+    def analyze_single_review(self, review_text):
         results = []
         for aspect in ASPECTS:
             sentiment, confidence = self.predict_sentiment(review_text, aspect)
@@ -59,14 +60,14 @@ class ProductReviewAnalyzer:
                 "review": review_text,
                 "aspect": aspect,
                 "sentiment": sentiment,
-                "confidence": max(confidence)#highest class probability
+                "confidence": max(confidence) # highest class probability
             })
         return results
 
     def analyze_reviews(self, reviews):
         all_rows = []
         for r in reviews:
-            all_rows.extend(self.analyze_review(r))
+            all_rows.extend(self.analyze_single_review(r))
         return pd.DataFrame(all_rows)
 
 
@@ -133,12 +134,10 @@ def calculate_sentiment_scores(df, output_folder):
     
     colors = []
     for score in scores_sorted['net_sentiment_score']:
-        if score > 0:
-            colors.append(SENTIMENT_COLORS['positive']) #green
-        elif score < 0:
-            colors.append(SENTIMENT_COLORS['negative']) #red
+        if score >= 0:
+            colors.append(SENTIMENT_COLORS['positive']) # green
         else:
-            colors.append(SENTIMENT_COLORS['neutral']) #yellow
+            colors.append(SENTIMENT_COLORS['negative']) # red
     
     bars = plt.barh(scores_sorted['aspect'], scores_sorted['net_sentiment_score'], 
                     color=colors, edgecolor='black')
@@ -227,25 +226,23 @@ def main():
     print(f"Loaded {len(reviews)} reviews.\n")
 
     analyzer = ProductReviewAnalyzer(args.model_dir)
-    df = analyzer.analyze_reviews(reviews)
-
-    print("\nSample predictions:\n", df.head(), "\n")
+    review_analysis_df = analyzer.analyze_reviews(reviews)
 
     # Save the prediction table
     predictions_file = os.path.join(output_folder, "predictions.csv")
-    df.to_csv(predictions_file, index=False)
+    review_analysis_df.to_csv(predictions_file, index=False)
     print(f"Predictions saved to {predictions_file}")
 
     # Create visualizations
     print("\nCreating visualizations...")
-    visualize_sentiment_distribution(df, output_folder)
+    visualize_sentiment_distribution(review_analysis_df, output_folder)
     
     # Calculate sentiment scores
-    scores_df = calculate_sentiment_scores(df, output_folder)
+    scores_df = calculate_sentiment_scores(review_analysis_df, output_folder)
     scores_df.to_csv(os.path.join(output_folder, 'sentiment_scores.csv'), index=False)
         
     # Create summary report
-    report, aspect_sentiment_table, strengths, weaknesses = create_summary_report(df, scores_df, output_folder)
+    report, aspect_sentiment_table, strengths, weaknesses = create_summary_report(review_analysis_df, scores_df, output_folder)
 
     # Also save the aspect_sentiment_table for reference
     aspect_sentiment_table.to_csv(os.path.join(output_folder, 'aspect_frequency_table.csv'))

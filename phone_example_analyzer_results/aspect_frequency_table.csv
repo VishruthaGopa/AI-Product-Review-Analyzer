@@ -1,0 +1,16 @@
+aspect,negative,neutral,positive,total
+Battery,0.0,36.0,14.0,50.0
+Display,9.0,41.0,0.0,50.0
+Price,14.0,35.0,1.0,50.0
+Features,25.0,23.0,2.0,50.0
+Audio,22.0,24.0,4.0,50.0
+Camera,2.0,5.0,43.0,50.0
+Quality,28.0,1.0,21.0,50.0
+Design,21.0,1.0,28.0,50.0
+Comfort,17.0,1.0,32.0,50.0
+Speed,13.0,9.0,28.0,50.0
+Storage,13.0,36.0,1.0,50.0
+Durability,41.0,0.0,9.0,50.0
+Size,10.0,37.0,3.0,50.0
+Weight,14.0,33.0,3.0,50.0
+User Experience,42.0,0.0,8.0,50.0

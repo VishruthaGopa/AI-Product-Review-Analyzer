@@ -1,27 +1,29 @@
-# simple_inference.py
 import pandas as pd
 from transformers import pipeline
 import os
+from sklearn.metrics import f1_score, accuracy_score
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def test_on_dataset():
-    # Load your dataset
-    df = pd.read_csv('train_dataset.csv')
+    # Load the dataset
+    test_path = 'train_dataset.csv'
+    df = pd.read_csv(test_path)
     
-    # Load pre-trained ABSA model
+    # Load pre-trained base ABSA model
     print("Loading ABSA model...")
     classifier = pipeline(
         "text-classification",
         model="yangheng/deberta-v3-base-absa-v1.1"
     )
     
-    # Test on first 10 samples
-    print("\nTesting on first 10 samples from train_dataset.csv:")
+    # Test on the samples
+    print("\nTesting on all samples from test_path:")
     print("=" * 80)
     
-    correct = 0
-    total = min(20, len(df))
+    total = len(df)
+    true_labels = []
+    pred_labels = []
     
     for i in range(total):
         row = df.iloc[i]
@@ -34,25 +36,23 @@ def test_on_dataset():
         pred = result[0]['label'].lower()
         confidence = result[0]['score']
         
-        if 'pos' in pred:
-            pred = 'positive'
-        elif 'neg' in pred:
-            pred = 'negative'
-        elif 'neu' in pred:
-            pred = 'neutral'
-        
+        true_labels.append(true_sentiment)
+        pred_labels.append(pred)
         is_correct = pred == true_sentiment
-        if is_correct:
-            correct += 1
         
-        symbol = "✓" if is_correct else "✗"
-        print(f"{symbol} '{text[:50]}...'")
+        symbol = "PASS" if is_correct else "FAIL"
+        print(f"{symbol} '{text}'")
         print(f"  Aspect: {aspect}")
         print(f"  True: {true_sentiment} | Pred: {pred} ({confidence:.2%})")
         print()
             
     
-    print(f"\n Accuracy on {total} samples: {correct/total:.0%}")
+    # Calculate metrics
+    macro_f1 = f1_score(true_labels, pred_labels, labels=["negative", "neutral", "positive"], average="macro")
+    accuracy = accuracy_score(true_labels, pred_labels)
+    
+    print(f"\nMacro F1 on {total} samples: {macro_f1:.4f}")
+    print(f"Accuracy on {total} samples: {accuracy:.4%}")
 
 if __name__ == "__main__":
     test_on_dataset()

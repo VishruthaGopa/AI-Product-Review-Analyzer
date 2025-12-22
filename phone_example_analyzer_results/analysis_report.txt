@@ -1,0 +1,46 @@
+============================================================
+PRODUCT REVIEW ANALYSIS SUMMARY REPORT
+============================================================
+
+Total Reviews Analyzed: 50
+
+Overall Sentiment Distribution:
+  Neutral: 37.6%
+  Negative: 36.1%
+  Positive: 26.3%
+
+=== ASPECT FREQUENCY TABLE ===
+
+aspect               negative   positive  
+----------------------------------------
+Battery              0         14        
+Display              9         0         
+Price                14        1         
+Features             25        2         
+Audio                22        4         
+Camera               2         43        
+Quality              28        21        
+Design               21        28        
+Comfort              17        32        
+Speed                13        28        
+Storage              13        1         
+Durability           41        9         
+Size                 10        3         
+Weight               14        3         
+User Experience      42        8         
+
+=== TOP STRENGTHS (Most Positive Mentions) ===
+
+aspect               positive   total     
+----------------------------------------
+Camera               43         50        
+Comfort              32         50        
+Design               28         50        
+
+=== TOP WEAKNESSES (Most Negative Mentions) ===
+
+aspect               negative   total     
+----------------------------------------
+User Experience      42         50        
+Durability           41         50        
+Quality              28         50        

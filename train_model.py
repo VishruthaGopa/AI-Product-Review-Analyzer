@@ -22,7 +22,7 @@ from sklearn.model_selection import train_test_split
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["WANDB_DISABLED"] = "true"
 
-class ABSAKFoldTrainer:
+class ABSATrainer:
     def __init__(self, model_name="yangheng/deberta-v3-base-absa-v1.1"):
 
         # Initialize the ABSA trainer with K-Fold CV
@@ -36,8 +36,8 @@ class ABSAKFoldTrainer:
 
         # Map sentiment labels to numeric IDs for model training
         self.label2id = {"negative": 0, "neutral": 1, "positive": 2}
-        # Create reverse mapping to interpret predictions back to human-readable labels
-        self.id2label = {v: k for k, v in self.label2id.items()}
+        # Create reverse mapping
+        self.id2label = {0: "negative", 1: "neutral", 2: "positive"}
 
         print(f"Base model loaded")
 
@@ -98,9 +98,8 @@ class ABSAKFoldTrainer:
     def compute_metrics(self, eval_pred):
         # Compute metrics for evaluation
 
-        predictions, labels = eval_pred
-        # [prob neg, prob neutral, prob positive] #TODO: confirm
-        predictions = np.argmax(predictions, axis=1)
+        predictions_matrix, labels = eval_pred
+        predictions = np.argmax(predictions_matrix, axis=1)
 
         accuracy = accuracy_score(labels, predictions)
         f1 = f1_score(labels, predictions, average='macro')
@@ -129,7 +128,9 @@ class ABSAKFoldTrainer:
         train_encodings = self.preprocess_data(train_df) # Convert text to numbers
         val_encodings = self.preprocess_data(val_df)
 
-        train_dataset = Dataset.from_dict(train_encodings)
+        # Convert training data to HuggingFace Dataset format 
+        train_dataset = Dataset.from_dict(train_encodings) 
+        # Convert validation data to HuggingFace Dataset format for evaluation
         val_dataset = Dataset.from_dict(val_encodings)
 
         # Data collator makes sure all examples in a batch have same length,
@@ -146,14 +147,15 @@ class ABSAKFoldTrainer:
             per_device_eval_batch_size=batch_size * 2,
             learning_rate=learning_rate,
             warmup_ratio=0.1,# gradually increase learning rate at start
-            weight_decay=0.01,# penalty to prevent overcomplicated models
+            weight_decay=0.01,# penalty to prevent overfitting
             save_strategy="no",  # Don't save checkpoints during training
-            eval_strategy="epoch",
+            eval_strategy="no",
             save_total_limit=0,
             load_best_model_at_end=False,
-            metric_for_best_model="accuracy",
+            metric_for_best_model="f1",
             greater_is_better=True,
             report_to=None,
+            logging_strategy="no",
         )
 
         # Initialize trainer
@@ -173,18 +175,6 @@ class ABSAKFoldTrainer:
 
         train_result = trainer.train()
 
-        # Save the fold model as a single .pth file
-        fold_model_path = os.path.join(output_dir, f"fold_{fold_num + 1}.pth")
-        torch.save({
-            'model_state_dict': model.state_dict(),
-            'config': model.config,
-            'label2id': self.label2id,
-            'id2label': self.id2label,
-            'fold_num': fold_num + 1,
-            'train_loss': train_result.metrics['train_loss']
-        }, fold_model_path)
-        print(f"   Saved fold model to: {fold_model_path}")
-
         # Evaluate on validation set
         eval_results = trainer.evaluate()
 
@@ -195,9 +185,8 @@ class ABSAKFoldTrainer:
             'accuracy': eval_results['eval_accuracy'],
             'f1': eval_results['eval_f1'],
             'precision': eval_results['eval_precision'],
-            'recall': eval_results['eval_recall'],
-            'model': model  # Return the model object
-        }
+            'recall': eval_results['eval_recall']
+        }, model # Return the model object
 
     def cross_validate(self, df, k=5, output_dir="kfold_models", epochs=5, batch_size=8, learning_rate=0.00005, random_state=42):
         #Perform K-Fold cross-validation
@@ -211,8 +200,8 @@ class ABSAKFoldTrainer:
         # Initialize K-Fold (use StratifiedKFold for imbalanced classes)
         kf = StratifiedKFold(n_splits=k, shuffle=True, random_state=random_state) # random_state: Set fixed random seed for reproducible data splits
 
-        fold_results = []
-        models = []  # Store model objects to find the best one
+        fold_performance_results = []
+        fold_saved_models = []  # Store model objects to find the best one
 
         # Perform K-Fold Cross Validation
         for fold_num, (train_idx, val_idx) in enumerate(kf.split(df, df['label'])):
@@ -221,7 +210,7 @@ class ABSAKFoldTrainer:
             val_df = df.iloc[val_idx].reset_index(drop=True)
 
             # Train this fold
-            fold_result = self.train_fold(
+            fold_result, fold_model_result = self.train_fold(
                 train_df=train_df,
                 val_df=val_df,
                 fold_num=fold_num,
@@ -231,12 +220,10 @@ class ABSAKFoldTrainer:
                 learning_rate=learning_rate
             )
 
-            # Store model
-            models.append(fold_result['model'])
-            # Remove model from results dict
-            del fold_result['model']
-
-            fold_results.append(fold_result)
+            # Store saved model object for that fold
+            fold_saved_models.append(fold_model_result)
+            # store performance results for that fold
+            fold_performance_results.append(fold_result)
 
             # Print fold results
             print(f"\n Fold {fold_num + 1} Results:")
@@ -250,11 +237,11 @@ class ABSAKFoldTrainer:
         print("=" * 60)
 
         # Convert results to DataFrame
-        results_df = pd.DataFrame(fold_results)
+        result_performance_metrics_df = pd.DataFrame(fold_performance_results)
 
         # Print fold-wise results
         print("\nFold-wise Performance:")
-        print(results_df.to_string(index=False))
+        print(result_performance_metrics_df.to_string(index=False))
 
         # Calculate mean and std
         metrics = ['accuracy', 'f1', 'precision', 'recall', 'train_loss', 'eval_loss']
@@ -262,48 +249,30 @@ class ABSAKFoldTrainer:
         print("\nOverall Statistics:")
         print("-" * 40)
         for metric in metrics:
-            mean_val = results_df[metric].mean()
-            std_val = results_df[metric].std()
+            mean_val = result_performance_metrics_df[metric].mean()
+            std_val = result_performance_metrics_df[metric].std()
             print(f"{metric.capitalize():12} : {mean_val:.4f} (±{std_val:.4f})")
 
         # Save results to CSV
-        results_df.to_csv(os.path.join(output_dir, "cv_results.csv"), index=False)
+        result_performance_metrics_df.to_csv(os.path.join(output_dir, "cv_results.csv"), index=False)
 
-        # Save the best model as a single .pth file
-        self.save_best_model_single_file(results_df, models, output_dir)
+        # Save the best model as a .pth file
+        self.save_best_model_single_file(result_performance_metrics_df, fold_saved_models, output_dir)
 
-        return results_df
-
-    def save_best_model_single_file(self, results_df, models, output_dir):
+    def save_best_model_single_file(self, result_performance_metrics_df, models, output_dir):
         #Save the best model as a single .pth file
         print(f"\nSaving results to: {output_dir}/cv_results.csv")
 
-        # Find the best fold based on validation accuracy
-        best_fold_idx = results_df['accuracy'].idxmax()
-        best_fold_num = int(results_df.loc[best_fold_idx, 'fold'])
-        best_model = models[best_fold_idx]
+        # Find the best fold based on validation f1
+        best_fold_index = result_performance_metrics_df['f1'].idxmax()
+        best_fold_num = int(result_performance_metrics_df.loc[best_fold_index, 'fold'])
+        best_model = models[best_fold_index]
 
         print(f"\nBest performing fold: {best_fold_num}")
-        print(f"   Accuracy: {results_df.loc[best_fold_idx, 'accuracy']:.4f}")
-        print(f"   F1-Score: {results_df.loc[best_fold_idx, 'f1']:.4f}")
+        print(f"   Accuracy: {result_performance_metrics_df.loc[best_fold_index, 'accuracy']:.4f}")
+        print(f"   F1-Score: {result_performance_metrics_df.loc[best_fold_index, 'f1']:.4f}")
 
-        # # Save the best model as a single .pth file
-        # best_model_path = os.path.join(output_dir, "best_model.pth")
-        # torch.save({
-        #     'model_state_dict': best_model.state_dict(),
-        #     'config': best_model.config,
-        #     'label2id': self.label2id,
-        #     'id2label': self.id2label,
-        #     'tokenizer': self.tokenizer,  # Save tokenizer configuration
-        #     'fold_num': best_fold_num,
-        #     'accuracy': results_df.loc[best_fold_idx, 'accuracy'],
-        #     'f1': results_df.loc[best_fold_idx, 'f1']
-        # }, best_model_path)
-
-        # print(f"\nBest model saved as single file: {best_model_path}")
-        # print(f"File size: {os.path.getsize(best_model_path) / (1024*1024):.2f} MB")
-
-        # Save the ENTIRE model object
+        # Save the entire model object
         best_model_path = os.path.join(output_dir, "best_model.pth")
         torch.save({
             'model': best_model,  # Save the entire trained model object
@@ -311,8 +280,8 @@ class ABSAKFoldTrainer:
             'id2label': self.id2label,
             'tokenizer': self.tokenizer,
             'fold_num': best_fold_num,
-            'accuracy': results_df.loc[best_fold_idx, 'accuracy'],
-            'f1': results_df.loc[best_fold_idx, 'f1']
+            'accuracy': result_performance_metrics_df.loc[best_fold_index, 'accuracy'],
+            'f1': result_performance_metrics_df.loc[best_fold_index, 'f1']
         }, best_model_path)
 
         print(f"\nBest model saved as single file: {best_model_path}")
@@ -323,16 +292,16 @@ class ABSAKFoldTrainer:
         print(f"\nFinal Testing on Separate Test Set")
         print("=" * 50)
 
-        # Load the model from single .pth file
+        # Load the model from .pth file
         print(f"Loading model from: {model_path}")
-        checkpoint = torch.load(model_path, map_location='cpu', weights_only=False)
+        saved_model_load = torch.load(model_path, map_location='cpu', weights_only=False)
         
-        # Get YOUR trained model directly
-        model = checkpoint['model']
+        # load the best trained model directly
+        model = saved_model_load['model']
+        # Set model to evaluation model
         model.eval()
-        
         # Get tokenizer
-        tokenizer = checkpoint.get('tokenizer', self.tokenizer)
+        tokenizer = saved_model_load.get('tokenizer', self.tokenizer)
 
         predictions = []
         true_labels = []
@@ -347,24 +316,24 @@ class ABSAKFoldTrainer:
                 max_length=512
             )
 
-            with torch.no_grad(): # Turn off learning (just testing)
-                outputs = model(**inputs) # pass elements in dictionary as separate arguments
-                pred_probs = torch.nn.functional.softmax(outputs.logits, dim=-1) #get model predictions probabilities
+            with torch.no_grad(): # don't compute gradients during evaluation
+                scores = model(**inputs).logits # pass elements in dictionary as separate arguments
+                pred_probs = torch.nn.functional.softmax(scores, dim=-1) # get model predictions probabilities
                 predicted_class = torch.argmax(pred_probs, dim=1).item()
 
             predictions.append(predicted_class)
             true_labels.append(self.label2id[row['sentiment'].lower()])
-
+            
         # Calculate metrics
         accuracy = accuracy_score(true_labels, predictions)
-        f1 = f1_score(true_labels, predictions, average='weighted')
+        macro_f1 = f1_score(true_labels, predictions, labels=[0, 1, 2], average="macro")
 
         print(f"Test Set Performance:")
         print(f"   Accuracy: {accuracy:.4f}")
-        print(f"   F1-Score: {f1:.4f}")
+        print(f"   F1-Score: {macro_f1:.4f}")
         print(f"   Test Samples: {len(test_df)}")
 
-        return accuracy, f1
+        return accuracy, macro_f1
 
 
 def main():
@@ -384,17 +353,17 @@ def main():
     
     try:
         # Initialize trainer
-        trainer = ABSAKFoldTrainer()
+        trainer = ABSATrainer()
         
         # Load dataset
-        df = trainer.load_dataset(args.data)
+        dataset_df = trainer.load_dataset(args.data)
         
         # Split into train+validation and test sets
         train_val_df, test_df = train_test_split(
-            df, 
+            dataset_df, 
             test_size=args.test_split, 
             random_state=42,
-            stratify=df['label']
+            stratify=dataset_df['label']
         )
         
         print(f"\n Dataset Split:")
@@ -402,7 +371,7 @@ def main():
         print(f"   Test (holdout): {len(test_df)} samples")
         
         # Perform K-Fold cross-validation on train+validation set
-        results_df = trainer.cross_validate(
+        trainer.cross_validate(
             df=train_val_df,
             k=args.k,
             output_dir=args.output,
@@ -414,17 +383,18 @@ def main():
         # Final test on holdout set
         test_df['sentiment'] = test_df['label'].map(trainer.id2label)
         
-        # Test with the single file model
+        # Test with the file model
         best_model_path = os.path.join(args.output, "best_model.pth")
         accuracy, f1 = trainer.final_test(test_df, best_model_path)
         
         print("\n" + "=" * 60)
-        print("K-FOLD CROSS VALIDATION COMPLETE!")
+        print("K-FOLD CROSS VALIDATION COMPLETE")
         print("=" * 60)
         print(f"\n Results saved in: {os.path.abspath(args.output)}")
         print(f" Each fold saved as: fold_X.pth")
-        print(f" Best model saved as SINGLE FILE: {args.output}/best_model.pth")
+        print(f" Best model saved as single file: {args.output}/best_model.pth")
         print(f" Final test accuracy: {accuracy:.4f}")
+        print(f" Final test f1: {f1:.4f}")
         
     except Exception as e:
         print(f" Error: {str(e)}")

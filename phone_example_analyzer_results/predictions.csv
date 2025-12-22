@@ -1,0 +1,751 @@
+review,aspect,sentiment,confidence
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Battery,neutral,0.9999171495437622
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Display,neutral,0.9999210834503174
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Price,negative,0.9996292591094971
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Features,neutral,0.999721109867096
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Audio,neutral,0.9998883008956909
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Camera,neutral,0.9999158382415771
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Quality,negative,0.9959710240364075
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Design,negative,0.6099739074707031
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Comfort,positive,0.9978419542312622
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Speed,positive,0.998296320438385
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Storage,negative,0.999535083770752
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Durability,negative,0.9988848567008972
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Size,negative,0.9990983009338379
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,Weight,negative,0.8492326736450195
+This phone is gorgeous and feels amazing in the hand. It's lightning fast too. But the price is shocking and the storage is laughably small for the cost.,User Experience,negative,0.9979783892631531
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Battery,positive,0.9993261098861694
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Display,neutral,0.9999217987060547
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Price,negative,0.9992831349372864
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Features,positive,0.9955568909645081
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Audio,positive,0.9925147891044617
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Camera,positive,0.9993769526481628
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Quality,positive,0.5124282836914062
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Design,positive,0.9995500445365906
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Comfort,positive,0.9995664954185486
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Speed,neutral,0.9664672613143921
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Storage,neutral,0.9823519587516785
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Durability,positive,0.49454641342163086
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Size,neutral,0.973948061466217
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",Weight,negative,0.9415935277938843
+"I love the sleek design and it's surprisingly comfortable to hold. The camera and battery are fantastic. Everything else feels overpriced and underwhelming, honestly.",User Experience,positive,0.9985105395317078
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Battery,positive,0.9989475607872009
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Display,neutral,0.9998301267623901
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Price,neutral,0.9999264478683472
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Features,negative,0.9993491768836975
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Audio,neutral,0.992706835269928
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Camera,positive,0.9992121458053589
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Quality,positive,0.9975487589836121
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Design,negative,0.9996283054351807
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Comfort,negative,0.9984517097473145
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Speed,negative,0.6420894861221313
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Storage,neutral,0.9998013377189636
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Durability,negative,0.5950477123260498
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Size,neutral,0.9998652935028076
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",Weight,neutral,0.9998452663421631
+"The camera quality is simply outstanding, and the battery lasts forever. It's a shame the user interface is so clunky and the screen is just mediocre.",User Experience,negative,0.9996452331542969
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Battery,neutral,0.9999277591705322
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Display,neutral,0.9998751878738403
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Price,neutral,0.9999302625656128
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Features,neutral,0.9993865489959717
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Audio,negative,0.9994317889213562
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Camera,negative,0.9685260057449341
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Quality,positive,0.8789601922035217
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Design,positive,0.994709849357605
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Comfort,negative,0.9994971752166748
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Speed,positive,0.9484387636184692
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Storage,neutral,0.9998912811279297
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Durability,negative,0.9175809621810913
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Size,neutral,0.9998607635498047
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",Weight,neutral,0.9997127652168274
+"Its speed is incredible and the build quality feels premium. However, the speaker audio is terrible and I'm already seeing scratches on the display.",User Experience,negative,0.9993140697479248
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Battery,neutral,0.9999077320098877
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Display,neutral,0.9999147653579712
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Price,neutral,0.9829671382904053
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Features,neutral,0.9998664855957031
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Audio,positive,0.7190611362457275
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Camera,positive,0.9989944100379944
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Quality,positive,0.992638111114502
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Design,positive,0.999526858329773
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Comfort,positive,0.9995967745780945
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Speed,neutral,0.9790361523628235
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Storage,positive,0.8153471946716309
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Durability,positive,0.7460166215896606
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Size,positive,0.9837343692779541
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",Weight,neutral,0.9896200299263
+"The design is beautiful and the phone is very comfortable to use. Photos are stunning. For this price, I expected better durability and more storage space.",User Experience,positive,0.9992427825927734
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Battery,neutral,0.9999233484268188
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Display,neutral,0.9999263286590576
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Price,neutral,0.9999334812164307
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Features,negative,0.9995453953742981
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Audio,negative,0.916229784488678
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Camera,positive,0.9929625391960144
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Quality,positive,0.8411352038383484
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Design,negative,0.9992341995239258
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Comfort,negative,0.887975811958313
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Speed,positive,0.9711233377456665
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Storage,neutral,0.9997716546058655
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Durability,negative,0.9932336211204529
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Size,neutral,0.9999198913574219
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",Weight,neutral,0.9999184608459473
+"It takes perfect photos and the performance is buttery smooth. The user experience is frustrating though, with too many bugs and a confusing menu system.",User Experience,negative,0.9995471835136414
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Battery,positive,0.9500292539596558
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Display,neutral,0.9998873472213745
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Price,negative,0.9947015643119812
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Features,neutral,0.9998700618743896
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Audio,neutral,0.9990035891532898
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Camera,positive,0.9838829636573792
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Quality,negative,0.9982938170433044
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Design,negative,0.9989920258522034
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Comfort,negative,0.9982653260231018
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Speed,negative,0.9802850484848022
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Storage,negative,0.9802703857421875
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Durability,negative,0.9973199963569641
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Size,neutral,0.9997881054878235
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,Weight,negative,0.9989209175109863
+Battery life is a true all-day champ and the camera is brilliant. The screen is disappointingly dim and the whole thing feels fragile and overpriced.,User Experience,negative,0.9991029500961304
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Battery,neutral,0.9999184608459473
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Display,neutral,0.9998396635055542
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Price,neutral,0.9999241828918457
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Features,neutral,0.9998787641525269
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Audio,negative,0.9996893405914307
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Camera,neutral,0.9998089671134949
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Quality,negative,0.9994438290596008
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Design,positive,0.9990705847740173
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Comfort,positive,0.9778836965560913
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Speed,positive,0.9859669804573059
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Storage,neutral,0.9996565580368042
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Durability,negative,0.9992918968200684
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Size,neutral,0.9996198415756226
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,Weight,neutral,0.9997046589851379
+I adore the look and feel of this device. It's so fast. Why is the audio so tinny and why does the screen scratch so easily?,User Experience,negative,0.9968456625938416
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Battery,neutral,0.9999184608459473
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Display,neutral,0.9999250173568726
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Price,positive,0.9899206161499023
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Features,negative,0.9996803998947144
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Audio,negative,0.756452739238739
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Camera,positive,0.9871898293495178
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Quality,negative,0.9987174272537231
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Design,negative,0.9982810020446777
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Comfort,positive,0.9907149076461792
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Speed,neutral,0.9955891370773315
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Storage,neutral,0.9944471120834351
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Durability,negative,0.9991151690483093
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Size,neutral,0.9998904466629028
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,Weight,neutral,0.9883918166160583
+The camera is worth the price alone. The phone itself is well-built and comfy. Sadly the software is a mess and the features feel stripped down.,User Experience,negative,0.999610960483551
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Battery,neutral,0.9999138116836548
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Display,negative,0.9995331764221191
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Price,neutral,0.9999229907989502
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Features,neutral,0.9997019171714783
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Audio,neutral,0.9996904134750366
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Camera,negative,0.6272832751274109
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Quality,negative,0.9982794523239136
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Design,negative,0.9801617860794067
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Comfort,positive,0.9920138716697693
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Speed,negative,0.991051435470581
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Storage,negative,0.9994896650314331
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Durability,negative,0.9991969466209412
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Size,negative,0.9508604407310486
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,Weight,negative,0.9785841107368469
+It's a very comfortable and stylish phone that takes great pictures. The storage fills up instantly and the display colors look washed out to me.,User Experience,negative,0.9991351962089539
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Battery,neutral,0.9999200105667114
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Display,neutral,0.9999233484268188
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Price,neutral,0.9999284744262695
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Features,negative,0.9920146465301514
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Audio,positive,0.9953582882881165
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Camera,positive,0.9989904761314392
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Quality,positive,0.9778831005096436
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Design,positive,0.4573911130428314
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Comfort,negative,0.9979972243309021
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Speed,positive,0.997658371925354
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Storage,neutral,0.9998544454574585
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Durability,negative,0.8544363379478455
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Size,positive,0.689359188079834
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",Weight,neutral,0.9997202754020691
+"Speed and camera performance are top notch. The physical quality is solid. The user experience is not, with laggy animations and a bloated interface.",User Experience,negative,0.9995899796485901
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Battery,positive,0.9979724287986755
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Display,neutral,0.9998891353607178
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Price,neutral,0.9999290704727173
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Features,negative,0.9815207123756409
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Audio,negative,0.9995600581169128
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Camera,neutral,0.999595582485199
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Quality,negative,0.998887836933136
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Design,positive,0.9980498552322388
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Comfort,negative,0.9993160963058472
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Speed,negative,0.999268114566803
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Storage,neutral,0.9998220801353455
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Durability,negative,0.9158772826194763
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Size,neutral,0.9995954632759094
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,Weight,neutral,0.8092283010482788
+The battery easily lasts all day and the design is lovely. The screen is prone to smudges and the speaker is oddly quiet and flat.,User Experience,negative,0.9993496537208557
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Battery,neutral,0.9998966455459595
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Display,neutral,0.9999148845672607
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Price,negative,0.999542236328125
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Features,neutral,0.9958350658416748
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Audio,neutral,0.9996780157089233
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Camera,positive,0.9996159076690674
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Quality,positive,0.9991704225540161
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Design,positive,0.9995372295379639
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Comfort,positive,0.9996110796928406
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Speed,positive,0.99959796667099
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Storage,neutral,0.9998750686645508
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Durability,positive,0.9989938139915466
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Size,neutral,0.9998434782028198
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",Weight,neutral,0.9953057169914246
+"This is a comfortable, well-made phone that's incredibly fast. The camera is stellar. The price is hard to justify for such basic features.",User Experience,positive,0.9993070363998413
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Battery,neutral,0.9999074935913086
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Display,neutral,0.9999151229858398
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Price,neutral,0.9999284744262695
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Features,negative,0.9995668530464172
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Audio,negative,0.9556900858879089
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Camera,positive,0.997255265712738
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Quality,negative,0.6904087662696838
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Design,negative,0.9992557168006897
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Comfort,positive,0.9900922179222107
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Speed,neutral,0.9327437877655029
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Storage,neutral,0.969535231590271
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Durability,negative,0.9996005892753601
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Size,neutral,0.9998739957809448
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,Weight,negative,0.988434910774231
+Photos are incredibly sharp and the phone feels great. That's where the good ends. The software is buggy and the durability seems questionable.,User Experience,negative,0.9993742108345032
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Battery,neutral,0.9935781955718994
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Display,neutral,0.999916672706604
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Price,neutral,0.9999239444732666
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Features,neutral,0.9824150204658508
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Audio,neutral,0.9997466206550598
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Camera,neutral,0.9998773336410522
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Quality,positive,0.8571600317955017
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Design,positive,0.9988413453102112
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Comfort,negative,0.9360531568527222
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Speed,positive,0.9978805780410767
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Storage,negative,0.9996294975280762
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Durability,negative,0.998670220375061
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Size,negative,0.9994412064552307
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,Weight,negative,0.6463528871536255
+Lightning fast performance and a battery that won't quit. The premium design is nice. The storage is insufficient and the screen is already scratched.,User Experience,negative,0.9994875192642212
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Battery,neutral,0.9999226331710815
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Display,negative,0.9993952512741089
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Price,neutral,0.9999252557754517
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Features,neutral,0.9997965693473816
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Audio,negative,0.9995354413986206
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Camera,positive,0.9988790154457092
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Quality,positive,0.9968593120574951
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Design,positive,0.9988607168197632
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Comfort,positive,0.994460940361023
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Speed,negative,0.998846173286438
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Storage,neutral,0.9994489550590515
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Durability,positive,0.9960124492645264
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Size,positive,0.9780663251876831
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,Weight,neutral,0.9216726422309875
+The camera is phenomenal and the build quality is excellent. It's also comfortable to hold. The display is unimpressive and the audio is just bad.,User Experience,positive,0.9369780421257019
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Battery,neutral,0.9998995065689087
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Display,neutral,0.9999167919158936
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Price,negative,0.9996235370635986
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Features,negative,0.9988378882408142
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Audio,neutral,0.9989263415336609
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Camera,positive,0.9989703893661499
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Quality,negative,0.6626625657081604
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Design,positive,0.9885835647583008
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Comfort,positive,0.9681897759437561
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Speed,positive,0.997557520866394
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Storage,neutral,0.9998915195465088
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Durability,negative,0.9992790818214417
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Size,neutral,0.9998289346694946
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,Weight,neutral,0.9838373064994812
+I love how this phone looks and feels. It's super quick and the camera is amazing. The software is glitchy and the price tag is painful.,User Experience,negative,0.9994277358055115
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Battery,positive,0.9975656270980835
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Display,neutral,0.9997517466545105
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Price,neutral,0.999924898147583
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Features,negative,0.9986667633056641
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Audio,neutral,0.9991099238395691
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Camera,positive,0.9907868504524231
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Quality,negative,0.8320425152778625
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Design,negative,0.9992484450340271
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Comfort,positive,0.817266583442688
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Speed,neutral,0.9023022055625916
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Storage,neutral,0.9997227787971497
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Durability,negative,0.733671247959137
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Size,neutral,0.9811146855354309
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",Weight,positive,0.5836908221244812
+"Stellar camera and all-day battery life in a sleek, comfortable body. The user interface is unintuitive and the screen is average at best.",User Experience,negative,0.999619722366333
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Battery,neutral,0.9999188184738159
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Display,neutral,0.9999227523803711
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Price,neutral,0.9999231100082397
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Features,neutral,0.9980819225311279
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Audio,negative,0.9987303614616394
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Camera,positive,0.9986473917961121
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Quality,positive,0.9917073845863342
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Design,positive,0.9971531629562378
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Comfort,negative,0.9952287673950195
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Speed,negative,0.9937752485275269
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Storage,negative,0.9995967745780945
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Durability,negative,0.9962546825408936
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Size,negative,0.9993718266487122
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,Weight,negative,0.9992631077766418
+It's beautifully designed and the photo quality is superb. The speed is fantastic too. The storage is too small and the speakers are terrible.,User Experience,negative,0.9975131750106812
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Battery,neutral,0.999897837638855
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Display,neutral,0.7575902938842773
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Price,neutral,0.9999212026596069
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Features,neutral,0.9999096393585205
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Audio,neutral,0.997401237487793
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Camera,positive,0.5683706402778625
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Quality,negative,0.9634153842926025
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Design,negative,0.9949265718460083
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Comfort,positive,0.9991326928138733
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Speed,positive,0.9991244673728943
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Storage,neutral,0.9998204112052917
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Durability,negative,0.8828379511833191
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Size,neutral,0.9998655319213867
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,Weight,neutral,0.9339141249656677
+The performance is snappy and the phone feels premium and comfy. Pictures are gorgeous. The screen is dull and I worry it won't survive a drop.,User Experience,positive,0.9959633350372314
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Battery,positive,0.7320032119750977
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Display,negative,0.8709312677383423
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Price,neutral,0.9999281167984009
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Features,negative,0.9977018237113953
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Audio,neutral,0.9938837885856628
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Camera,positive,0.9982789754867554
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Quality,negative,0.9650914669036865
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Design,negative,0.9957109689712524
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Comfort,positive,0.9989092350006104
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Speed,neutral,0.7193319201469421
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Storage,neutral,0.9997338652610779
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Durability,negative,0.9918236136436462
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Size,neutral,0.9998171925544739
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,Weight,neutral,0.9962672591209412
+A truly comfortable phone with a fantastic camera. The battery is excellent. The software experience is clunky and the display is nothing special.,User Experience,negative,0.9994294047355652
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Battery,neutral,0.9999213218688965
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Display,neutral,0.9999229907989502
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Price,negative,0.9996696710586548
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Features,neutral,0.9945276379585266
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Audio,positive,0.9977292418479919
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Camera,positive,0.9994352459907532
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Quality,positive,0.9780551791191101
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Design,positive,0.9982774257659912
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Comfort,positive,0.9989113807678223
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Speed,positive,0.9993313550949097
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Storage,neutral,0.9998032450675964
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Durability,negative,0.9990542531013489
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Size,neutral,0.9681797027587891
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",Weight,negative,0.9862205982208252
+"Speed and camera are perfect. The design and comfort are top tier. Everything else is a letdown, especially the fragile screen and high price.",User Experience,positive,0.9911112189292908
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Battery,neutral,0.9999032020568848
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Display,neutral,0.9999171495437622
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Price,neutral,0.9999243021011353
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Features,negative,0.9996098875999451
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Audio,negative,0.9995274543762207
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Camera,positive,0.9874306917190552
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Quality,positive,0.9614429473876953
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Design,negative,0.9980448484420776
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Comfort,negative,0.9927452206611633
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Speed,positive,0.9799062609672546
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Storage,neutral,0.9962244033813477
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Durability,negative,0.9966087341308594
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Size,neutral,0.9996484518051147
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,Weight,neutral,0.9996168613433838
+The camera captures every detail and the phone is wonderfully fast. It feels high quality. The audio is weak and the features feel outdated.,User Experience,negative,0.9990910291671753
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Battery,neutral,0.6936514377593994
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Display,neutral,0.9999182224273682
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Price,neutral,0.9999237060546875
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Features,negative,0.9992377758026123
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Audio,negative,0.5495397448539734
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Camera,positive,0.9969004392623901
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Quality,negative,0.9000034332275391
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Design,positive,0.7718836665153503
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Comfort,positive,0.974578320980072
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Speed,negative,0.9933784604072571
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Storage,negative,0.9993847608566284
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Durability,negative,0.7924360632896423
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Size,negative,0.9976924657821655
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",Weight,negative,0.6974233984947205
+"Beautiful design, comfortable grip, and a brilliant camera. The battery life is solid. The user experience is frustrating and the storage is lacking.",User Experience,negative,0.9993053674697876
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Battery,positive,0.9985499978065491
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Display,negative,0.9996601343154907
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Price,negative,0.9995818734169006
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Features,neutral,0.9996285438537598
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Audio,neutral,0.9997580647468567
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Camera,positive,0.9992818236351013
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Quality,positive,0.8250136971473694
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Design,positive,0.9973065853118896
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Comfort,positive,0.9984748959541321
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Speed,neutral,0.9995892643928528
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Storage,neutral,0.9740115404129028
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Durability,positive,0.9989977478981018
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Size,neutral,0.8698084950447083
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,Weight,positive,0.8296672701835632
+It takes professional photos and the battery lasts forever. The build is solid and comfortable. The display is subpar and it was too expensive.,User Experience,negative,0.5899477005004883
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Battery,neutral,0.9999160766601562
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Display,neutral,0.999911904335022
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Price,neutral,0.9999268054962158
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Features,negative,0.9995284080505371
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Audio,neutral,0.9934379458427429
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Camera,positive,0.9669222235679626
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Quality,negative,0.9994530081748962
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Design,negative,0.9994021654129028
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Comfort,positive,0.9967442750930786
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Speed,positive,0.9983556866645813
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Storage,neutral,0.9998167157173157
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Durability,negative,0.9995013475418091
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Size,neutral,0.9998607635498047
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,Weight,neutral,0.867631733417511
+I'm impressed by the speed and the camera's low light shots. The phone feels great. The software is buggy and the screen scratches if you look at it.,User Experience,negative,0.9995664954185486
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Battery,neutral,0.9999158382415771
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Display,neutral,0.9999206066131592
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Price,negative,0.9996383190155029
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Features,neutral,0.9993677735328674
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Audio,negative,0.9995102882385254
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Camera,positive,0.999269425868988
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Quality,negative,0.9994811415672302
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Design,negative,0.4896254539489746
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Comfort,positive,0.9990241527557373
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Speed,negative,0.9991683959960938
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Storage,neutral,0.9999008178710938
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Durability,negative,0.9828963875770569
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Size,neutral,0.9986094236373901
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,Weight,neutral,0.9947296380996704
+The camera is a dream and the phone is very comfortable to use daily. The audio quality is poor and the price feels unjustified.,User Experience,positive,0.968010663986206
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Battery,positive,0.9981831908226013
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Display,neutral,0.9999064207077026
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Price,neutral,0.9999250173568726
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Features,negative,0.9939858317375183
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Audio,neutral,0.9991286396980286
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Camera,positive,0.999225378036499
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Quality,negative,0.7630335092544556
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Design,positive,0.6913355588912964
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Comfort,negative,0.9812662601470947
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Speed,positive,0.9660447239875793
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Storage,neutral,0.9998144507408142
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Durability,negative,0.8440982699394226
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Size,neutral,0.9998564720153809
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,Weight,neutral,0.9759587049484253
+Fantastic battery life paired with a stunning camera. The phone is well-built and fast. The screen is easily damaged and the interface is confusing.,User Experience,negative,0.9994101524353027
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Battery,neutral,0.9999144077301025
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Display,neutral,0.9999206066131592
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Price,neutral,0.9996724128723145
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Features,negative,0.9993151426315308
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Audio,negative,0.9994656443595886
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Camera,positive,0.8864652514457703
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Quality,negative,0.9982430934906006
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Design,negative,0.998640239238739
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Comfort,negative,0.9982396364212036
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Speed,negative,0.830599308013916
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Storage,neutral,0.999792754650116
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Durability,negative,0.9983628392219543
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Size,neutral,0.9998716115951538
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,Weight,neutral,0.9976569414138794
+This phone feels expensive and takes amazing pictures. It's also very snappy. The user experience is not smooth and the speaker audio is tinny.,User Experience,negative,0.9994183778762817
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Battery,neutral,0.9999173879623413
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Display,negative,0.9977310299873352
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Price,neutral,0.9999332427978516
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Features,negative,0.9993298053741455
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Audio,neutral,0.7921269536018372
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Camera,positive,0.9912700653076172
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Quality,negative,0.9926043748855591
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Design,positive,0.9933851361274719
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Comfort,negative,0.6914501190185547
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Speed,negative,0.996931791305542
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Storage,negative,0.9885413646697998
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Durability,negative,0.9989375472068787
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Size,negative,0.9966379404067993
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,Weight,negative,0.9902046918869019
+The design is elegant and it sits nicely in the hand. Photos are incredible. The software is full of bloatware and the screen is mediocre.,User Experience,negative,0.9996289014816284
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Battery,positive,0.9981558918952942
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Display,negative,0.9996247291564941
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Price,negative,0.9996294975280762
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Features,neutral,0.9998014569282532
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Audio,neutral,0.99607253074646
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Camera,positive,0.9992488026618958
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Quality,positive,0.9946447610855103
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Design,positive,0.9967315196990967
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Comfort,negative,0.8301525712013245
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Speed,positive,0.9977476000785828
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Storage,neutral,0.9998342990875244
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Durability,positive,0.9963247179985046
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Size,neutral,0.9996378421783447
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,Weight,neutral,0.8610824942588806
+Lightning fast with a battery that never dies. The camera is stellar and the build quality is good. The display is lackluster and it cost too much.,User Experience,positive,0.9907797574996948
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Battery,neutral,0.9999066591262817
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Display,neutral,0.9999200105667114
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Price,neutral,0.9999231100082397
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Features,positive,0.5140127539634705
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Audio,neutral,0.9996465444564819
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Camera,positive,0.8600220680236816
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Quality,negative,0.9839802980422974
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Design,positive,0.9454514980316162
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Comfort,positive,0.9979068040847778
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Speed,positive,0.9963233470916748
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Storage,negative,0.9995023012161255
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Durability,negative,0.9995657801628113
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Size,negative,0.9991445541381836
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",Weight,negative,0.9691445231437683
+"A comfortable, good-looking phone that performs quickly. The camera is its best feature. The storage is inadequate and the overall durability seems low.",User Experience,negative,0.9953950047492981
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Battery,neutral,0.9999200105667114
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Display,neutral,0.9998878240585327
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Price,neutral,0.9999302625656128
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Features,neutral,0.6507113575935364
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Audio,negative,0.9996585845947266
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Camera,positive,0.9883308410644531
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Quality,negative,0.9986379742622375
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Design,negative,0.9941095113754272
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Comfort,positive,0.9764724373817444
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Speed,negative,0.9992976188659668
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Storage,neutral,0.9990785121917725
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Durability,negative,0.9976255297660828
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Size,neutral,0.9995248317718506
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,Weight,neutral,0.9997232556343079
+The camera is worth the hype. The phone is comfortable and well-made. The screen is unremarkable and the audio is disappointing for media.,User Experience,negative,0.9980868101119995
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Battery,neutral,0.9999204874038696
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Display,neutral,0.9999239444732666
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Price,neutral,0.9999257326126099
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Features,negative,0.9991376399993896
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Audio,neutral,0.9995381832122803
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Camera,positive,0.9991642236709595
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Quality,positive,0.9992634654045105
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Design,positive,0.9380257725715637
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Comfort,neutral,0.9921777844429016
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Speed,positive,0.999247670173645
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Storage,neutral,0.9997358918190002
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Durability,negative,0.9532440900802612
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Size,neutral,0.9999157190322876
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,Weight,neutral,0.9999097585678101
+It's very fast and the photo quality is exceptional. I like the design. The user interface is a headache and the features are barebones.,User Experience,negative,0.999650239944458
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Battery,positive,0.9975047707557678
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Display,neutral,0.9997889399528503
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Price,negative,0.9996191263198853
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Features,neutral,0.9999059438705444
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Audio,neutral,0.9999027252197266
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Camera,neutral,0.9995692372322083
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Quality,positive,0.9055386781692505
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Design,neutral,0.9996755123138428
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Comfort,positive,0.9988892674446106
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Speed,neutral,0.9998836517333984
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Storage,negative,0.9995600581169128
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Durability,negative,0.9936708211898804
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Size,neutral,0.8633774518966675
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",Weight,neutral,0.9980546236038208
+"Stunning photos, great battery, and a premium feel. It's also comfortable. The price is steep for the basic display and limited storage you get.",User Experience,negative,0.6021273732185364
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Battery,neutral,0.9999167919158936
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Display,neutral,0.999923586845398
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Price,neutral,0.9999306201934814
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Features,negative,0.9993244409561157
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Audio,negative,0.9994516968727112
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Camera,positive,0.9980619549751282
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Quality,negative,0.9962624907493591
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Design,positive,0.9899011254310608
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Comfort,positive,0.9845892786979675
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Speed,positive,0.9939577579498291
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Storage,neutral,0.9998250603675842
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Durability,negative,0.9962472319602966
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Size,neutral,0.999893069267273
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",Weight,neutral,0.9996421337127686
+"The speed is impressive and the camera is brilliant. It has a nice, comfortable design. The software experience is glitchy and the speakers are weak.",User Experience,negative,0.9994937181472778
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Battery,neutral,0.9999098777770996
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Display,neutral,0.9999152421951294
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Price,neutral,0.9999164342880249
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Features,neutral,0.9983626008033752
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Audio,negative,0.999370276927948
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Camera,positive,0.9884735941886902
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Quality,negative,0.7458904981613159
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Design,positive,0.9850398302078247
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Comfort,positive,0.8466663956642151
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Speed,positive,0.9058523774147034
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Storage,neutral,0.9998600482940674
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Durability,negative,0.9965506792068481
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Size,neutral,0.9996426105499268
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,Weight,neutral,0.9981920123100281
+A beautifully designed phone that's a joy to hold. The camera and speed are perfect. The screen is easily scratched and the audio is flat.,User Experience,negative,0.5047808289527893
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Battery,positive,0.9831849932670593
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Display,neutral,0.9241635203361511
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Price,neutral,0.9999336004257202
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Features,negative,0.9955694079399109
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Audio,negative,0.5960609912872314
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Camera,positive,0.9988942742347717
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Quality,positive,0.9964050054550171
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Design,positive,0.9971500039100647
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Comfort,positive,0.9987813830375671
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Speed,neutral,0.6497146487236023
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Storage,neutral,0.9977492690086365
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Durability,positive,0.9968875050544739
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Size,neutral,0.9937660694122314
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,Weight,neutral,0.8938760161399841
+The camera is amazing and the battery lasts all day. Build quality and comfort are excellent. The display is average and the software is buggy.,User Experience,negative,0.998672366142273
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Battery,neutral,0.9998816251754761
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Display,neutral,0.9999099969863892
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Price,negative,0.9996457099914551
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Features,negative,0.9992376565933228
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Audio,negative,0.6414918303489685
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Camera,positive,0.9817928671836853
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Quality,positive,0.9380345940589905
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Design,negative,0.9988245368003845
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Comfort,positive,0.9712050557136536
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Speed,positive,0.981132447719574
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Storage,neutral,0.9994015693664551
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Durability,negative,0.9277424216270447
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Size,neutral,0.999784529209137
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,Weight,neutral,0.9372274279594421
+Photos are sharp and the performance is blazing fast. The phone feels high quality and comfy. The user experience is cluttered and the price is high.,User Experience,negative,0.999660849571228
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Battery,neutral,0.9999172687530518
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Display,neutral,0.9999027252197266
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Price,neutral,0.9999226331710815
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Features,neutral,0.9998960494995117
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Audio,neutral,0.999790370464325
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Camera,positive,0.9994251728057861
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Quality,neutral,0.9989286065101624
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Design,positive,0.9993636012077332
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Comfort,positive,0.9994626641273499
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Speed,positive,0.9979071617126465
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Storage,negative,0.999542236328125
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Durability,negative,0.9335004687309265
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Size,negative,0.9994707703590393
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,Weight,negative,0.6144617199897766
+I love the comfortable design and the fantastic camera. It's very speedy. The storage is too small and the screen quality is just okay.,User Experience,negative,0.9813297390937805
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Battery,neutral,0.9999086856842041
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Display,neutral,0.9999209642410278
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Price,neutral,0.999924898147583
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Features,negative,0.9993263483047485
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Audio,negative,0.9994499087333679
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Camera,positive,0.9969760179519653
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Quality,negative,0.9973406195640564
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Design,negative,0.993546187877655
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Comfort,positive,0.9826213717460632
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Speed,negative,0.9989317059516907
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Storage,neutral,0.9998681545257568
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Durability,negative,0.9960748553276062
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Size,neutral,0.9993473887443542
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,Weight,positive,0.8641934394836426
+This phone is built well and feels great in hand. The camera is a powerhouse. The audio is terrible and the interface is not user-friendly.,User Experience,negative,0.9995137453079224
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Battery,positive,0.999503493309021
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Display,negative,0.9996404647827148
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Price,negative,0.9995255470275879
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Features,neutral,0.9998688697814941
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Audio,neutral,0.9997681975364685
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Camera,positive,0.9994969367980957
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Quality,negative,0.9951446652412415
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Design,positive,0.7851076126098633
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Comfort,negative,0.5860623121261597
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Speed,positive,0.999056875705719
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Storage,neutral,0.9998471736907959
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Durability,positive,0.9960797429084778
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Size,neutral,0.9998248219490051
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,Weight,negative,0.9981361627578735
+The battery life is incredible and the camera is even better. The phone is stylish and quick. The display is poor and it feels overpriced.,User Experience,negative,0.9953886270523071
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Battery,neutral,0.9999148845672607
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Display,neutral,0.9998061060905457
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Price,neutral,0.9999254941940308
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Features,negative,0.9990952014923096
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Audio,neutral,0.9990724325180054
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Camera,positive,0.9488044381141663
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Quality,negative,0.9928829669952393
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Design,positive,0.6268213987350464
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Comfort,negative,0.9459995031356812
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Speed,negative,0.968975305557251
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Storage,neutral,0.999826967716217
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Durability,negative,0.99666827917099
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Size,neutral,0.9996283054351807
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,Weight,negative,0.9588108062744141
+It takes gorgeous pictures and operates smoothly. The design is sleek and comfortable. The software is frustrating and the screen seems delicate.,User Experience,negative,0.9987092018127441
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Battery,neutral,0.999915361404419
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Display,neutral,0.9999219179153442
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Price,neutral,0.9999281167984009
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Features,neutral,0.945571780204773
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Audio,negative,0.9995225667953491
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Camera,positive,0.997882068157196
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Quality,negative,0.7983683347702026
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Design,negative,0.6176116466522217
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Comfort,positive,0.9931178092956543
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Speed,positive,0.9833427667617798
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Storage,negative,0.9995883107185364
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Durability,negative,0.8832409977912903
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Size,negative,0.9972925782203674
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",Weight,neutral,0.7468226552009583
+"A fast, comfortable phone with an outstanding camera. The build quality is solid. The speaker audio is bad and the storage fills up too fast.",User Experience,negative,0.998879611492157
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Battery,neutral,0.9999134540557861
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Display,neutral,0.9865013957023621
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Price,neutral,0.9999246597290039
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Features,negative,0.9995248317718506
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Audio,neutral,0.9779532551765442
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Camera,positive,0.9843947887420654
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Quality,negative,0.9520359635353088
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Design,negative,0.9993776679039001
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Comfort,negative,0.7456871867179871
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Speed,positive,0.9716995358467102
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Storage,neutral,0.9997803568840027
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Durability,negative,0.9985249638557434
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Size,neutral,0.9998515844345093
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,Weight,neutral,0.9887464642524719
+The camera is spectacular and the phone is wonderfully fast. It feels premium. The user experience is not intuitive and the screen is underwhelming.,User Experience,negative,0.9996097683906555
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Battery,positive,0.9760209321975708
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Display,negative,0.9993852376937866
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Price,neutral,0.9999246597290039
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Features,negative,0.9996256828308105
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Audio,negative,0.9910895824432373
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Camera,positive,0.997385561466217
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Quality,positive,0.9972453117370605
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Design,negative,0.9988823533058167
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Comfort,positive,0.998699426651001
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Speed,positive,0.986283004283905
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Storage,negative,0.9975601434707642
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Durability,negative,0.9303011298179626
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Size,neutral,0.9783781170845032
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,Weight,neutral,0.9812572002410889
+Excellent photo quality and all-day battery in a comfortable body. The speed is great. The display is easily marred and the features are limited.,User Experience,negative,0.9995834231376648
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Battery,neutral,0.9999052286148071
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Display,neutral,0.9999197721481323
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Price,negative,0.9997071623802185
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Features,neutral,0.9990707635879517
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Audio,negative,0.9995896220207214
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Camera,positive,0.9974825978279114
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Quality,negative,0.623100221157074
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Design,positive,0.9987174272537231
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Comfort,positive,0.9988380074501038
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Speed,positive,0.9948746562004089
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Storage,neutral,0.9998728036880493
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Durability,positive,0.7025707960128784
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Size,neutral,0.9997957348823547
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",Weight,neutral,0.9874562621116638
+"This is a snappy, well-built phone that's comfortable to use. The camera is superb. The audio is lacking and the price tag is hard to swallow.",User Experience,negative,0.9085640907287598
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Battery,neutral,0.9999183416366577
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Display,neutral,0.9988970756530762
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Price,neutral,0.9999289512634277
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Features,negative,0.9992251396179199
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Audio,negative,0.7516588568687439
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Camera,positive,0.9979215264320374
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Quality,positive,0.7014249563217163
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Design,positive,0.998638927936554
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Comfort,negative,0.9920256733894348
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Speed,positive,0.9193335771560669
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Storage,neutral,0.9993320107460022
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Durability,negative,0.9973360896110535
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Size,neutral,0.9998817443847656
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,Weight,neutral,0.9973752498626709
+The design is beautiful and the camera is perfect. Performance is top notch. The screen is bland and the software has too many issues.,User Experience,negative,0.9994727969169617
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Battery,neutral,0.999915361404419
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Display,neutral,0.9999207258224487
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Price,neutral,0.9999184608459473
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Features,negative,0.9994760155677795
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Audio,neutral,0.9998279809951782
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Camera,positive,0.9990140199661255
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Quality,positive,0.9983585476875305
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Design,negative,0.9995521903038025
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Comfort,positive,0.9986857771873474
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Speed,positive,0.8507274389266968
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Storage,negative,0.9996507167816162
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Durability,negative,0.9992159605026245
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Size,negative,0.9995439648628235
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",Weight,neutral,0.999671459197998
+"A comfortable, high-quality phone that takes brilliant photos. It's also very fast. The storage is insufficient and the user interface is a mess.",User Experience,negative,0.9996384382247925
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Battery,positive,0.997809112071991
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Display,negative,0.9945091605186462
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Price,negative,0.9996577501296997
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Features,neutral,0.9999082088470459
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Audio,neutral,0.999895453453064
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Camera,positive,0.981449544429779
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Quality,negative,0.9773000478744507
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Design,positive,0.9973393082618713
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Comfort,positive,0.9938788414001465
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Speed,positive,0.8648003339767456
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Storage,neutral,0.999866247177124
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Durability,negative,0.98569655418396
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Size,neutral,0.9998570680618286
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",Weight,neutral,0.9922424554824829
+"Fantastic camera, great battery, and a sleek, comfy design. It's very fast too. The display is mediocre and the overall value for money is poor.",User Experience,negative,0.9722689390182495
